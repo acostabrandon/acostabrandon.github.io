@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operations — Brandon Acosta</title>
+  <meta name="description" content="Commercial operations at EndyMed by capability: CRM architecture, client onboarding, post-sale SOPs, RFM install-base intelligence, and strategy." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Main navigation ===== -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Brandon Acosta<span>.</span></a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="operations.html" class="active">Operations</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Sticky sub-navigation ===== -->
+  <div class="subnav">
+    <nav class="subnav-inner" aria-label="Operations sections">
+      <a class="subtab active" href="#crm">CRM Architecture</a>
+      <a class="subtab" href="#onboarding">Client Onboarding</a>
+      <a class="subtab" href="#sop">SOP Development</a>
+      <a class="subtab" href="#rfm">RFM &amp; Install Base</a>
+      <a class="subtab" href="#decks">Strategy Decks</a>
+    </nav>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <div class="wrap narrow">
+      <p class="eyebrow">Operations</p>
+      <h1>The commercial operating system</h1>
+      <p class="lede">
+        Commercial operations at EndyMed, organized by capability. Each section pairs a short
+        problem-approach-result writeup with the work behind it — a generated diagram plus
+        approved, redacted artifacts. Use the bar above to jump between areas.
+      </p>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <!-- ============================================================ -->
+    <!-- 1. CRM ARCHITECTURE & LEAD DIGITALIZATION                    -->
+    <!-- ============================================================ -->
+    <section class="ops-section" id="crm">
+      <span class="section-num">01 — Capability</span>
+      <h2>CRM Architecture &amp; Lead Digitalization</h2>
+
+      <div class="par-grid">
+        <div class="par-block">
+          <h4>Problem</h4>
+          <p>
+            Commercial activity lived across inboxes, spreadsheets, and individual reps' notes.
+            Leads arrived in inconsistent formats, pipeline stages meant different things to
+            different people, and leadership had no reliable, current view of what was in play.
+          </p>
+        </div>
+        <div class="par-block">
+          <h4>Approach</h4>
+          <p>
+            I built a national CRM from scratch — standardizing lead and deal pipelines on one
+            set of stage definitions, replacing ad-hoc intake with digital lead-capture forms
+            that require the fields we need for clean data, and automating territory routing so
+            every new lead lands with the right owner without manual triage.
+          </p>
+        </div>
+      </div>
+
+      <div class="par-block" style="margin-top:1.5rem;">
+        <h4>Result</h4>
+        <ul class="result-list">
+          <li>One source of truth for lead and deal status across the commercial team.</li>
+          <li>Required-field intake forms that protect data integrity at the point of entry.</li>
+          <li>Automated territory routing that removes manual hand-offs and delay.</li>
+          <li>Live pipeline visibility for leadership, refreshed from the system of record.</li>
+        </ul>
+      </div>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 820 300" role="img" aria-label="CRM architecture: lead sources flow through digital intake forms into a standardized CRM, then to an automated territory routing engine and a live leadership dashboard.">
+          <defs>
+            <marker id="arw1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,0 L8,4.5 L0,9 z" class="dg-arrow-head" />
+            </marker>
+          </defs>
+          <text x="20" y="30" class="dg-sub">LEAD SOURCES</text>
+          <rect x="20" y="42" width="150" height="40" class="dg-box" rx="2" />
+          <text x="34" y="66" class="dg-label">Trade shows &amp; events</text>
+          <rect x="20" y="92" width="150" height="40" class="dg-box" rx="2" />
+          <text x="34" y="116" class="dg-label">Web &amp; referral</text>
+          <rect x="20" y="142" width="150" height="40" class="dg-box" rx="2" />
+          <text x="34" y="166" class="dg-label">Field &amp; inbound</text>
+
+          <text x="230" y="30" class="dg-sub">DIGITAL INTAKE</text>
+          <rect x="230" y="72" width="160" height="80" class="dg-box-accent" rx="2" />
+          <text x="244" y="102" class="dg-label">Lead-intake forms</text>
+          <text x="244" y="122" class="dg-sub">Required fields</text>
+          <text x="244" y="138" class="dg-sub">Validated at entry</text>
+
+          <text x="450" y="30" class="dg-sub">SYSTEM OF RECORD</text>
+          <rect x="450" y="52" width="170" height="120" class="dg-box" rx="2" />
+          <text x="464" y="78" class="dg-label">Standardized CRM</text>
+          <line x1="464" y1="90" x2="606" y2="90" class="dg-flow" />
+          <text x="464" y="112" class="dg-sub">Lead pipeline stages</text>
+          <text x="464" y="134" class="dg-sub">Deal pipeline stages</text>
+          <text x="464" y="156" class="dg-sub">Account &amp; territory data</text>
+
+          <text x="675" y="30" class="dg-sub">OPERATIONALIZE</text>
+          <rect x="675" y="52" width="130" height="52" class="dg-box" rx="2" />
+          <text x="689" y="74" class="dg-label">Territory</text>
+          <text x="689" y="92" class="dg-label">routing engine</text>
+          <rect x="675" y="120" width="130" height="52" class="dg-box-accent" rx="2" />
+          <text x="689" y="142" class="dg-label">Leadership</text>
+          <text x="689" y="160" class="dg-label">dashboard</text>
+
+          <path d="M170,62 C200,62 205,105 228,105" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M170,112 L228,112" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M170,162 C200,162 205,120 228,118" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M390,112 L448,112" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M620,90 C650,90 650,78 673,78" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M620,135 C650,135 650,146 673,146" class="dg-flow" marker-end="url(#arw1)" />
+        </svg>
+        <figcaption>CRM architecture — lead sources feed validated digital intake into a single standardized system, which drives automated routing and live leadership reporting.</figcaption>
+      </figure>
+
+      <div class="artifact-grid">
+        <div class="shot">
+          <span class="shot-k">Redacted screenshot</span>
+          <span class="shot-name">Standardized deal pipeline (board view)</span>
+          <span class="shot-file">images/crm-pipeline-redacted.png</span>
+        </div>
+        <div class="shot">
+          <span class="shot-k">Redacted screenshot</span>
+          <span class="shot-name">Digital lead-intake form (required fields)</span>
+          <span class="shot-file">images/crm-intake-form-redacted.png</span>
+        </div>
+      </div>
+
+      <figure class="deck" style="margin-top:1.75rem;">
+        <div class="deck-embed">
+          <div class="deck-fallback">
+            <span class="ph-k">Redacted deck</span>
+            <span class="ph-file">decks/CRM-Walkthrough_REDACTED.pdf</span>
+          </div>
+          <iframe src="decks/CRM-Walkthrough_REDACTED.pdf#view=FitH" title="EndyMed CRM implementation walkthrough (redacted)" loading="lazy"></iframe>
+        </div>
+        <div class="deck-bar">
+          <span class="deck-file">CRM rollout walkthrough — redacted</span>
+          <a class="btn-open" href="decks/CRM-Walkthrough_REDACTED.pdf" target="_blank" rel="noopener">Open full deck →</a>
+        </div>
+      </figure>
+
+      <p class="redacted-note">
+        Screenshots are labeled placeholders — drop in your own approved, redacted images. The
+        embedded deck is a first-pass redaction and should be reviewed before publishing.
+      </p>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 2. CLIENT ONBOARDING PROCESS                                 -->
+    <!-- ============================================================ -->
+    <section class="ops-section" id="onboarding">
+      <span class="section-num">02 — Capability</span>
+      <h2>Client Onboarding Process</h2>
+
+      <div class="par-grid">
+        <div class="par-block">
+          <h4>Problem</h4>
+          <p>
+            A capital equipment sale isn't finished when the deal closes — it starts a
+            multi-team handoff spanning logistics, installation, clinical training, and
+            certification. Without a defined path, steps slipped between functions and the
+            customer felt the gaps.
+          </p>
+        </div>
+        <div class="par-block">
+          <h4>Approach</h4>
+          <p>
+            I coordinate each deal cross-functionally from closed order through go-live,
+            sequencing logistics, install, clinical training, and certification into one
+            repeatable flow with clear ownership and status at every stage — supported by
+            standardized SOPs and email templates so nothing waits on an unasked question.
+          </p>
+        </div>
+      </div>
+
+      <div class="par-block" style="margin-top:1.5rem;">
+        <h4>Result</h4>
+        <ul class="result-list">
+          <li>A single, predictable onboarding path from closed deal to certified, live site.</li>
+          <li>Clear stage ownership across commercial, logistics, and clinical teams.</li>
+          <li>Reusable SOPs and templates that make each handoff consistent.</li>
+        </ul>
+      </div>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 840 150" role="img" aria-label="Horizontal onboarding process flow: closed deal, logistics and shipping, installation, clinical training, certification, and handoff to support.">
+          <defs>
+            <marker id="arw2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,0 L8,4.5 L0,9 z" class="dg-arrow-head" />
+            </marker>
+          </defs>
+          <rect x="10"  y="45" width="120" height="60" class="dg-box-accent" rx="2" />
+          <text x="70"  y="72" text-anchor="middle" class="dg-label">Closed Deal</text>
+          <text x="70"  y="90" text-anchor="middle" class="dg-sub">Order confirmed</text>
+          <rect x="152" y="45" width="120" height="60" class="dg-box" rx="2" />
+          <text x="212" y="72" text-anchor="middle" class="dg-label">Logistics</text>
+          <text x="212" y="90" text-anchor="middle" class="dg-sub">Ship &amp; schedule</text>
+          <rect x="294" y="45" width="120" height="60" class="dg-box" rx="2" />
+          <text x="354" y="72" text-anchor="middle" class="dg-label">Installation</text>
+          <text x="354" y="90" text-anchor="middle" class="dg-sub">On-site setup</text>
+          <rect x="436" y="45" width="120" height="60" class="dg-box" rx="2" />
+          <text x="496" y="72" text-anchor="middle" class="dg-label">Clinical Training</text>
+          <text x="496" y="90" text-anchor="middle" class="dg-sub">Protocol &amp; use</text>
+          <rect x="578" y="45" width="120" height="60" class="dg-box" rx="2" />
+          <text x="638" y="72" text-anchor="middle" class="dg-label">Certification</text>
+          <text x="638" y="90" text-anchor="middle" class="dg-sub">Sign-off</text>
+          <rect x="720" y="45" width="110" height="60" class="dg-box-accent" rx="2" />
+          <text x="775" y="72" text-anchor="middle" class="dg-label">Live &amp; Handoff</text>
+          <text x="775" y="90" text-anchor="middle" class="dg-sub">To support</text>
+          <line x1="130" y1="75" x2="150" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+          <line x1="272" y1="75" x2="292" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+          <line x1="414" y1="75" x2="434" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+          <line x1="556" y1="75" x2="576" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+          <line x1="698" y1="75" x2="718" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+        </svg>
+        <figcaption>Onboarding flow — one repeatable path from closed order to a certified, live installation and a clean handoff to support.</figcaption>
+      </figure>
+
+      <div class="artifact-grid">
+        <div class="shot">
+          <span class="shot-k">Redacted screenshot</span>
+          <span class="shot-name">Onboarding project board (CRM)</span>
+          <span class="shot-file">images/onboarding-board-redacted.png</span>
+        </div>
+        <div class="shot file">
+          <span class="shot-k">Document</span>
+          <span class="shot-name">Onboarding SOP</span>
+          <span class="shot-file">decks/onboarding-sop-redacted.pdf</span>
+        </div>
+        <div class="shot file">
+          <span class="shot-k">Template</span>
+          <span class="shot-name">Onboarding email templates</span>
+          <span class="shot-file">decks/onboarding-email-templates.pdf</span>
+        </div>
+        <div class="shot file">
+          <span class="shot-k">Document</span>
+          <span class="shot-name">Med Results onboarding materials</span>
+          <span class="shot-file">decks/med-results-onboarding-redacted.pdf</span>
+        </div>
+      </div>
+
+      <p class="redacted-note">
+        Add your approved onboarding board screenshot, SOP, email templates, and the Med Results
+        materials at the filenames shown. Anything with customer or practice names must be
+        redacted first.
+      </p>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 3. SOP DEVELOPMENT & POST-SALE OPERATIONS                    -->
+    <!-- ============================================================ -->
+    <section class="ops-section" id="sop">
+      <span class="section-num">03 — Capability</span>
+      <h2>SOP Development &amp; Post-Sale Operations</h2>
+
+      <div class="par-grid">
+        <div class="par-block">
+          <h4>Problem</h4>
+          <p>
+            Once equipment is in the field, service issues and end-of-life questions don't
+            resolve themselves. Without documented procedures, each case was handled from
+            scratch — slow, inconsistent, and dependent on whoever picked it up.
+          </p>
+        </div>
+        <div class="par-block">
+          <h4>Approach</h4>
+          <p>
+            I built standard operating procedures for service escalation and for out-of-warranty
+            and end-of-life handling, developed together with our third-party logistics (3PL)
+            warehouse partner so parts, returns, and dispositions follow a defined route rather
+            than an improvised one.
+          </p>
+        </div>
+      </div>
+
+      <div class="par-block" style="margin-top:1.5rem;">
+        <h4>Result</h4>
+        <ul class="result-list">
+          <li>Documented escalation tiers that route service cases consistently.</li>
+          <li>Clear out-of-warranty and end-of-life procedures aligned with the 3PL partner.</li>
+          <li>Predictable turnaround and less reliance on individual tribal knowledge.</li>
+        </ul>
+      </div>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 820 320" role="img" aria-label="Post-sale operations: a service case is intake and triaged, then either escalated through support tiers or routed by warranty status to the 3PL partner for parts, returns, or end-of-life disposition.">
+          <defs>
+            <marker id="arw3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,0 L8,4.5 L0,9 z" class="dg-arrow-head" />
+            </marker>
+          </defs>
+          <rect x="20" y="130" width="130" height="56" class="dg-box-accent" rx="2" />
+          <text x="85" y="154" text-anchor="middle" class="dg-label">Service case</text>
+          <text x="85" y="172" text-anchor="middle" class="dg-sub">Intake &amp; triage</text>
+          <text x="190" y="90" class="dg-sub">ESCALATION PATH</text>
+          <text x="190" y="250" class="dg-sub">WARRANTY / EOL PATH — WITH 3PL</text>
+          <rect x="190" y="100" width="120" height="46" class="dg-box" rx="2" />
+          <text x="250" y="128" text-anchor="middle" class="dg-label">Tier 1 — Support</text>
+          <rect x="340" y="100" width="120" height="46" class="dg-box" rx="2" />
+          <text x="400" y="128" text-anchor="middle" class="dg-label">Tier 2 — Technical</text>
+          <rect x="490" y="100" width="120" height="46" class="dg-box" rx="2" />
+          <text x="550" y="128" text-anchor="middle" class="dg-label">Tier 3 — Field / OEM</text>
+          <rect x="640" y="100" width="150" height="46" class="dg-box" rx="2" />
+          <text x="715" y="122" text-anchor="middle" class="dg-label">Resolve &amp; close</text>
+          <text x="715" y="138" text-anchor="middle" class="dg-sub">Log to CRM</text>
+          <rect x="190" y="200" width="130" height="46" class="dg-box" rx="2" />
+          <text x="255" y="222" text-anchor="middle" class="dg-label">Check warranty</text>
+          <text x="255" y="238" text-anchor="middle" class="dg-sub">In / out / EOL</text>
+          <rect x="350" y="185" width="150" height="34" class="dg-box" rx="2" />
+          <text x="425" y="207" text-anchor="middle" class="dg-sub">In warranty → repair</text>
+          <rect x="350" y="228" width="150" height="34" class="dg-box" rx="2" />
+          <text x="425" y="250" text-anchor="middle" class="dg-sub">Out of warranty → quote</text>
+          <rect x="350" y="271" width="150" height="34" class="dg-box" rx="2" />
+          <text x="425" y="293" text-anchor="middle" class="dg-sub">End-of-life → disposition</text>
+          <rect x="540" y="205" width="150" height="56" class="dg-box-accent" rx="2" />
+          <text x="615" y="229" text-anchor="middle" class="dg-label">3PL warehouse</text>
+          <text x="615" y="247" text-anchor="middle" class="dg-sub">Parts · returns · RMA</text>
+          <path d="M150,150 C170,150 172,123 188,123" class="dg-flow" marker-end="url(#arw3)" />
+          <path d="M150,165 C170,165 172,220 188,222" class="dg-flow" marker-end="url(#arw3)" />
+          <line x1="310" y1="123" x2="338" y2="123" class="dg-flow" marker-end="url(#arw3)" />
+          <line x1="460" y1="123" x2="488" y2="123" class="dg-flow" marker-end="url(#arw3)" />
+          <line x1="610" y1="123" x2="638" y2="123" class="dg-flow" marker-end="url(#arw3)" />
+          <path d="M320,215 L348,202" class="dg-flow" marker-end="url(#arw3)" />
+          <path d="M320,223 L348,245" class="dg-flow" marker-end="url(#arw3)" />
+          <path d="M320,231 L348,288" class="dg-flow" marker-end="url(#arw3)" />
+          <path d="M500,202 C520,202 520,225 538,228" class="dg-flow" marker-end="url(#arw3)" />
+          <path d="M500,245 L538,240" class="dg-flow" marker-end="url(#arw3)" />
+          <path d="M500,288 C520,288 520,248 538,244" class="dg-flow" marker-end="url(#arw3)" />
+        </svg>
+        <figcaption>Post-sale SOPs — one path escalates service through defined support tiers; the other checks warranty status and routes parts, returns, and end-of-life dispositions through the 3PL partner.</figcaption>
+      </figure>
+
+      <div class="artifact-grid">
+        <div class="shot file">
+          <span class="shot-k">Document</span>
+          <span class="shot-name">Service escalation SOP</span>
+          <span class="shot-file">decks/sop-service-escalation-redacted.pdf</span>
+        </div>
+        <div class="shot file">
+          <span class="shot-k">Document</span>
+          <span class="shot-name">Out-of-warranty / EOL SOP (3PL)</span>
+          <span class="shot-file">decks/sop-warranty-eol-redacted.pdf</span>
+        </div>
+        <div class="shot file">
+          <span class="shot-k">Framework</span>
+          <span class="shot-name">Returns / RMA framework with 3PL</span>
+          <span class="shot-file">decks/framework-returns-3pl.pdf</span>
+        </div>
+        <div class="shot file">
+          <span class="shot-k">Framework</span>
+          <span class="shot-name">Post-sale operating model</span>
+          <span class="shot-file">decks/framework-postsale-model.pdf</span>
+        </div>
+      </div>
+
+      <p class="redacted-note">
+        Drop redacted copies of the SOPs and 3PL frameworks at the filenames above. Remove any
+        partner-specific rates, contacts, or account references before publishing.
+      </p>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 4. RFM SEGMENTATION & INSTALL-BASE INTELLIGENCE (HIGHLIGHT)  -->
+    <!-- ============================================================ -->
+  </div><!-- /wrap (break out for full-width highlight band) -->
+
+  <section class="ops-section highlight" id="rfm">
+    <div class="wrap">
+      <span class="section-num">04 — Capability</span>
+      <h2>RFM Segmentation &amp; Install-Base Intelligence<span class="highlight-tag">Highlight</span></h2>
+
+      <div class="par-grid">
+        <div class="par-block">
+          <h4>Problem</h4>
+          <p>
+            The picture of who owned what, and how engaged they were, was spread across multiple
+            systems. Without a unified install base, it was hard to tell a dormant account from
+            an active one, or to know which accounts drove the most value — so re-engagement was
+            guesswork.
+          </p>
+        </div>
+        <div class="par-block">
+          <h4>Approach</h4>
+          <p>
+            I integrated multiple systems into a single install-base model, then applied RFM
+            segmentation — recency, frequency, and monetary value — to score and group accounts.
+            The segments made it obvious where re-engagement effort would pay off and which
+            relationships to protect, and fed directly into a targeted win-back strategy.
+          </p>
+        </div>
+      </div>
+
+      <div class="par-block" style="margin-top:1.5rem;">
+        <h4>Result</h4>
+        <ul class="result-list">
+          <li>A consolidated install base drawn from previously disconnected systems.</li>
+          <li>RFM segments that surface dormant, at-risk, and highest-value accounts.</li>
+          <li>A prioritized, RFM-targeted re-engagement and recurring-revenue strategy.</li>
+        </ul>
+      </div>
+
+      <figure class="diagram" style="background:#fff;">
+        <svg viewBox="0 0 820 330" role="img" aria-label="Multiple systems are integrated into one install-base model, then scored with RFM segmentation. An illustrative recency-versus-frequency grid shows generic segments such as top accounts, loyal, needs attention, and dormant.">
+          <defs>
+            <marker id="arw4" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,0 L8,4.5 L0,9 z" class="dg-arrow-head" />
+            </marker>
+          </defs>
+          <text x="20" y="40" class="dg-sub">SOURCE SYSTEMS</text>
+          <rect x="20" y="52" width="150" height="34" class="dg-box" rx="2" />
+          <text x="34" y="74" class="dg-sub">CRM &amp; deals</text>
+          <rect x="20" y="94" width="150" height="34" class="dg-box" rx="2" />
+          <text x="34" y="116" class="dg-sub">Install / service records</text>
+          <rect x="20" y="136" width="150" height="34" class="dg-box" rx="2" />
+          <text x="34" y="158" class="dg-sub">Order history</text>
+          <rect x="205" y="82" width="140" height="60" class="dg-box-accent" rx="2" />
+          <text x="275" y="108" text-anchor="middle" class="dg-label">Install-base model</text>
+          <text x="275" y="126" text-anchor="middle" class="dg-sub">Unified account view</text>
+          <rect x="205" y="170" width="140" height="46" class="dg-box" rx="2" />
+          <text x="275" y="192" text-anchor="middle" class="dg-label">RFM scoring</text>
+          <text x="275" y="208" text-anchor="middle" class="dg-sub">R · F · M</text>
+          <path d="M170,69 C188,69 190,105 203,105" class="dg-flow" marker-end="url(#arw4)" />
+          <path d="M170,111 L203,111" class="dg-flow" marker-end="url(#arw4)" />
+          <path d="M170,153 C188,153 190,118 203,116" class="dg-flow" marker-end="url(#arw4)" />
+          <path d="M275,142 L275,168" class="dg-flow" marker-end="url(#arw4)" />
+          <text x="430" y="40" class="dg-sub">ILLUSTRATIVE SEGMENTS — SAMPLE DATA</text>
+          <line x1="430" y1="60" x2="430" y2="270" class="dg-flow" />
+          <line x1="430" y1="270" x2="790" y2="270" class="dg-flow" />
+          <text x="405" y="165" class="dg-sub" transform="rotate(-90 405 165)">Frequency →</text>
+          <text x="560" y="292" text-anchor="middle" class="dg-sub">Recency →</text>
+          <rect x="440" y="70" width="170" height="95" class="dg-box" />
+          <text x="525" y="112" text-anchor="middle" class="dg-label">Loyal</text>
+          <text x="525" y="130" text-anchor="middle" class="dg-sub">Frequent, less recent</text>
+          <rect x="614" y="70" width="170" height="95" class="dg-box-accent" />
+          <text x="699" y="112" text-anchor="middle" class="dg-label">Top accounts</text>
+          <text x="699" y="130" text-anchor="middle" class="dg-sub">Recent, frequent, high value</text>
+          <rect x="440" y="169" width="170" height="95" class="dg-box" />
+          <text x="525" y="211" text-anchor="middle" class="dg-label">Dormant</text>
+          <text x="525" y="229" text-anchor="middle" class="dg-sub">Re-engagement target</text>
+          <rect x="614" y="169" width="170" height="95" class="dg-box" />
+          <text x="699" y="211" text-anchor="middle" class="dg-label">Needs attention</text>
+          <text x="699" y="229" text-anchor="middle" class="dg-sub">Recent, low frequency</text>
+          <path d="M345,193 C380,193 400,140 438,120" class="dg-flow" marker-end="url(#arw4)" />
+        </svg>
+        <figcaption>Install-base intelligence — disconnected systems are unified into one account model and scored with RFM. Grid is illustrative sample data, not actual account values.</figcaption>
+      </figure>
+
+      <figure class="deck" style="margin-top:1.75rem; background:#fff;">
+        <div class="deck-embed" style="background:#fff;">
+          <div class="deck-fallback">
+            <span class="ph-k">Redacted deck</span>
+            <span class="ph-file">decks/AOP-2026-RFM_REDACTED.pdf</span>
+          </div>
+          <iframe src="decks/AOP-2026-RFM_REDACTED.pdf#view=FitH" title="2026 install-base and RFM strategy (redacted)" loading="lazy"></iframe>
+        </div>
+        <div class="deck-bar">
+          <span class="deck-file">2026 install-base &amp; RFM strategy — redacted</span>
+          <a class="btn-open" href="decks/AOP-2026-RFM_REDACTED.pdf" target="_blank" rel="noopener">Open full deck →</a>
+        </div>
+      </figure>
+
+      <p class="redacted-note">
+        The embedded deck is a first-pass redaction — specific install counts and offer terms
+        were removed from the text. Review the RFM chart on slide 2 for any figures baked into
+        the image before this goes public.
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <!-- ============================================================ -->
+    <!-- 5. STRATEGY DECKS                                            -->
+    <!-- ============================================================ -->
+    <section class="ops-section" id="decks">
+      <span class="section-num">05 — Strategy</span>
+      <h2>Strategy Decks</h2>
+      <p class="lede" style="max-width:720px;">
+        Redacted work samples that show how I think about the commercial system as a whole —
+        planning, sequencing, and standardizing. Each is a first-pass redaction for review.
+      </p>
+
+      <figure class="deck" style="margin-top:1.75rem;">
+        <div class="deck-embed">
+          <div class="deck-fallback">
+            <span class="ph-k">Redacted deck</span>
+            <span class="ph-file">decks/Q4-Operational-Strategy_REDACTED.pdf</span>
+          </div>
+          <iframe src="decks/Q4-Operational-Strategy_REDACTED.pdf#view=FitH" title="Q4 operational strategy (redacted)" loading="lazy"></iframe>
+        </div>
+        <div class="deck-bar">
+          <span class="deck-file">Q4 operational strategy — redacted</span>
+          <a class="btn-open" href="decks/Q4-Operational-Strategy_REDACTED.pdf" target="_blank" rel="noopener">Open full deck →</a>
+        </div>
+      </figure>
+
+      <p class="redacted-note">
+        More decks can be added here as you approve them. The April 14 team deck was intentionally
+        left off — it centers on pricing and rebate figures. Say the word if you want a
+        heavily-reduced version instead.
+      </p>
+    </section>
+
+  </div><!-- /wrap -->
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="fname">Brandon Acosta</span>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/acostab" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/acostabrandon" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:brandon.acosta713@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
