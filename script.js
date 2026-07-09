@@ -62,3 +62,29 @@
     });
   });
 })();
+
+/* Lightbox — click any img.zoom to enlarge. No-op if none exist. */
+(function () {
+  var zoomables = document.querySelectorAll('img.zoom');
+  if (!zoomables.length) return;
+
+  var lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.setAttribute('role', 'dialog');
+  lb.setAttribute('aria-label', 'Enlarged image');
+  lb.innerHTML = '<span class="lb-close" aria-label="Close">&times;</span><img alt="" />';
+  document.body.appendChild(lb);
+  var lbImg = lb.querySelector('img');
+
+  function open(src, alt) {
+    lbImg.src = src; lbImg.alt = alt || '';
+    lb.classList.add('open'); document.body.style.overflow = 'hidden';
+  }
+  function close() { lb.classList.remove('open'); lbImg.src = ''; document.body.style.overflow = ''; }
+
+  zoomables.forEach(function (img) {
+    img.addEventListener('click', function () { open(img.currentSrc || img.src, img.alt); });
+  });
+  lb.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();

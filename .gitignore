@@ -13,3 +13,6 @@ images/onboarding/*.png
 
 # OS cruft
 .DS_Store
+
+# Unredacted source screenshots
+new screenshots/
