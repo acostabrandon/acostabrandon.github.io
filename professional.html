@@ -2,11 +2,321 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=operations.html" />
-  <link rel="canonical" href="operations.html" />
-  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional — Brandon Acosta</title>
+  <meta name="description" content="Sales operations at EndyMed — CRM engineering, install-base intelligence, onboarding, and commercial strategy — plus the Med Results portfolio." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <p>This page has moved to <a href="operations.html">Operations</a>.</p>
+
+  <!-- ===== Main navigation ===== -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Brandon Acosta<span>.</span></a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="professional.html" class="active">Professional</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Sticky sub-navigation ===== -->
+  <div class="subnav">
+    <nav class="subnav-inner" aria-label="Professional sections">
+      <a class="subtab active" href="#rfm">Install-Base &amp; RFM</a>
+      <a class="subtab" href="#crm">CRM Engineering</a>
+      <a class="subtab" href="#onboarding">Onboarding</a>
+      <a class="subtab" href="#strategy">Strategy &amp; Marketing</a>
+      <a class="subtab" href="#medresults">Med Results</a>
+    </nav>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <div class="wrap narrow">
+      <p class="eyebrow">Professional</p>
+      <h1>Sales operations at EndyMed</h1>
+      <p class="lede">
+        EndyMed is a lean medical-device manufacturer, so sales operations here is a broad job. I
+        own most of the systems that carry a deal from lead to fully onboarded customer — the data
+        infrastructure and the commercial strategy that runs on it. A few of the workstreams that
+        matter most, kept intentionally high-level.
+      </p>
+    </div>
+  </header>
+
+  <!-- ===== 1. Install-base & RFM (highlight) ===== -->
+  <section class="ops-section highlight" id="rfm">
+    <div class="wrap">
+      <span class="section-num">01 — Strongest story</span>
+      <h2>Install-Base Intelligence &amp; RFM Segmentation<span class="highlight-tag">Highlight</span></h2>
+      <div class="par-grid">
+        <div class="par-block">
+          <h4>What I did</h4>
+          <p>
+            Existing customers were underutilized and there was no data to target them. I
+            integrated three siloed systems — ERP, Shopify, and a cleaned client database — into a
+            single install-base model, derived customer value and order frequency, and ran RFM
+            segmentation to score every account.
+          </p>
+        </div>
+        <div class="par-block">
+          <h4>Why it mattered</h4>
+          <p>
+            The segments surfaced dormant accounts and the highest-value relationships, and turned
+            re-engagement from guesswork into a prioritized, segment-specific strategy. This
+            analysis shaped the 2026 annual operating plan.
+          </p>
+        </div>
+      </div>
+
+      <figure class="diagram" style="background:#fff;">
+        <svg viewBox="0 0 820 330" role="img" aria-label="Three source systems are integrated into one install-base model, then scored with RFM segmentation into an illustrative recency-frequency grid.">
+          <defs>
+            <marker id="arw4" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,0 L8,4.5 L0,9 z" class="dg-arrow-head" />
+            </marker>
+          </defs>
+          <text x="20" y="40" class="dg-sub">SOURCE SYSTEMS</text>
+          <rect x="20" y="52" width="150" height="34" class="dg-box" rx="2" />
+          <text x="34" y="74" class="dg-sub">ERP (device &amp; warranty)</text>
+          <rect x="20" y="94" width="150" height="34" class="dg-box" rx="2" />
+          <text x="34" y="116" class="dg-sub">Shopify (purchase history)</text>
+          <rect x="20" y="136" width="150" height="34" class="dg-box" rx="2" />
+          <text x="34" y="158" class="dg-sub">Client database</text>
+          <rect x="205" y="82" width="140" height="60" class="dg-box-accent" rx="2" />
+          <text x="275" y="108" text-anchor="middle" class="dg-label">Install-base model</text>
+          <text x="275" y="126" text-anchor="middle" class="dg-sub">Unified account view</text>
+          <rect x="205" y="170" width="140" height="46" class="dg-box" rx="2" />
+          <text x="275" y="192" text-anchor="middle" class="dg-label">RFM + CLV scoring</text>
+          <text x="275" y="208" text-anchor="middle" class="dg-sub">R · F · M</text>
+          <path d="M170,69 C188,69 190,105 203,105" class="dg-flow" marker-end="url(#arw4)" />
+          <path d="M170,111 L203,111" class="dg-flow" marker-end="url(#arw4)" />
+          <path d="M170,153 C188,153 190,118 203,116" class="dg-flow" marker-end="url(#arw4)" />
+          <path d="M275,142 L275,168" class="dg-flow" marker-end="url(#arw4)" />
+          <text x="430" y="40" class="dg-sub">ILLUSTRATIVE SEGMENTS — SAMPLE DATA</text>
+          <line x1="430" y1="60" x2="430" y2="270" class="dg-flow" />
+          <line x1="430" y1="270" x2="790" y2="270" class="dg-flow" />
+          <text x="405" y="165" class="dg-sub" transform="rotate(-90 405 165)">Frequency →</text>
+          <text x="560" y="292" text-anchor="middle" class="dg-sub">Recency →</text>
+          <rect x="440" y="70" width="170" height="95" class="dg-box" />
+          <text x="525" y="112" text-anchor="middle" class="dg-label">Loyal</text>
+          <text x="525" y="130" text-anchor="middle" class="dg-sub">Frequent, less recent</text>
+          <rect x="614" y="70" width="170" height="95" class="dg-box-accent" />
+          <text x="699" y="112" text-anchor="middle" class="dg-label">Top accounts</text>
+          <text x="699" y="130" text-anchor="middle" class="dg-sub">Recent, frequent, high value</text>
+          <rect x="440" y="169" width="170" height="95" class="dg-box" />
+          <text x="525" y="211" text-anchor="middle" class="dg-label">Dormant</text>
+          <text x="525" y="229" text-anchor="middle" class="dg-sub">Re-engagement target</text>
+          <rect x="614" y="169" width="170" height="95" class="dg-box" />
+          <text x="699" y="211" text-anchor="middle" class="dg-label">Needs attention</text>
+          <text x="699" y="229" text-anchor="middle" class="dg-sub">Recent, low frequency</text>
+          <path d="M345,193 C380,193 400,140 438,120" class="dg-flow" marker-end="url(#arw4)" />
+        </svg>
+        <figcaption>Three siloed systems unified into one install-base model and scored with RFM. Grid is illustrative sample data, not actual account values.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <!-- ===== 2. CRM engineering ===== -->
+    <section class="ops-section" id="crm">
+      <span class="section-num">02 — Infrastructure</span>
+      <h2>CRM Engineering &amp; Reporting Automation</h2>
+      <div class="par-grid">
+        <div class="par-block">
+          <h4>What I did</h4>
+          <p>
+            Built EndyMed's US CRM in Monday.com from nothing — standardized lead and deal boards,
+            defined pipeline stages, automated territory routing, and a managerial sales
+            dashboard. Automated weekly sales reporting across Zapier, Power Automate, Office
+            Scripts, and Excel.
+          </p>
+        </div>
+        <div class="par-block">
+          <h4>Why it mattered</h4>
+          <p>
+            For the first time leadership could see the full pipeline across 500+ leads in one
+            place, and every territory manager got a standardized KPI and deal-status report
+            without the manual work behind it.
+          </p>
+        </div>
+      </div>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 820 300" role="img" aria-label="Lead sources feed validated digital intake into a standardized CRM, driving automated territory routing and a leadership dashboard.">
+          <defs>
+            <marker id="arw1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,0 L8,4.5 L0,9 z" class="dg-arrow-head" />
+            </marker>
+          </defs>
+          <text x="20" y="30" class="dg-sub">LEAD SOURCES</text>
+          <rect x="20" y="42" width="150" height="40" class="dg-box" rx="2" />
+          <text x="34" y="66" class="dg-label">Trade shows &amp; events</text>
+          <rect x="20" y="92" width="150" height="40" class="dg-box" rx="2" />
+          <text x="34" y="116" class="dg-label">Web &amp; referral</text>
+          <rect x="20" y="142" width="150" height="40" class="dg-box" rx="2" />
+          <text x="34" y="166" class="dg-label">Field &amp; inbound</text>
+          <text x="230" y="30" class="dg-sub">DIGITAL INTAKE</text>
+          <rect x="230" y="72" width="160" height="80" class="dg-box-accent" rx="2" />
+          <text x="244" y="102" class="dg-label">Lead-intake forms</text>
+          <text x="244" y="122" class="dg-sub">Required fields</text>
+          <text x="244" y="138" class="dg-sub">Validated at entry</text>
+          <text x="450" y="30" class="dg-sub">SYSTEM OF RECORD</text>
+          <rect x="450" y="52" width="170" height="120" class="dg-box" rx="2" />
+          <text x="464" y="78" class="dg-label">Monday.com CRM</text>
+          <line x1="464" y1="90" x2="606" y2="90" class="dg-flow" />
+          <text x="464" y="112" class="dg-sub">Lead &amp; deal pipelines</text>
+          <text x="464" y="134" class="dg-sub">Stage definitions</text>
+          <text x="464" y="156" class="dg-sub">Account &amp; territory data</text>
+          <text x="675" y="30" class="dg-sub">OPERATIONALIZE</text>
+          <rect x="675" y="52" width="130" height="52" class="dg-box" rx="2" />
+          <text x="689" y="74" class="dg-label">Territory</text>
+          <text x="689" y="92" class="dg-label">routing</text>
+          <rect x="675" y="120" width="130" height="52" class="dg-box-accent" rx="2" />
+          <text x="689" y="142" class="dg-label">Sales</text>
+          <text x="689" y="160" class="dg-label">dashboard</text>
+          <path d="M170,62 C200,62 205,105 228,105" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M170,112 L228,112" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M170,162 C200,162 205,120 228,118" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M390,112 L448,112" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M620,90 C650,90 650,78 673,78" class="dg-flow" marker-end="url(#arw1)" />
+          <path d="M620,135 C650,135 650,146 673,146" class="dg-flow" marker-end="url(#arw1)" />
+        </svg>
+        <figcaption>CRM architecture — lead sources feed validated intake into one standardized system, driving automated routing and live leadership reporting.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 3. Onboarding ===== -->
+    <section class="ops-section" id="onboarding">
+      <span class="section-num">03 — Cross-functional ops</span>
+      <h2>Client Onboarding &amp; Post-Sale Operations</h2>
+      <div class="par-grid">
+        <div class="par-block">
+          <h4>What I did</h4>
+          <p>
+            Built a client onboarding board that triggers when a deal is signed and coordinates
+            each capital-equipment order across fulfillment, financing, and clinical training —
+            from order through shipment, install, training, certificate issuance, and marketing
+            handoff.
+          </p>
+        </div>
+        <div class="par-block">
+          <h4>Why it mattered</h4>
+          <p>
+            Marketing, fulfillment, and clinical teams finally shared visibility into every deal
+            in flight, giving customers a consistent start instead of a set of disconnected
+            handoffs.
+          </p>
+        </div>
+      </div>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 840 150" role="img" aria-label="Onboarding flow: closed deal, logistics, installation, clinical training, certification, and handoff to support.">
+          <defs>
+            <marker id="arw2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,0 L8,4.5 L0,9 z" class="dg-arrow-head" />
+            </marker>
+          </defs>
+          <rect x="10"  y="45" width="120" height="60" class="dg-box-accent" rx="2" />
+          <text x="70"  y="72" text-anchor="middle" class="dg-label">Closed Deal</text>
+          <text x="70"  y="90" text-anchor="middle" class="dg-sub">PQ signed</text>
+          <rect x="152" y="45" width="120" height="60" class="dg-box" rx="2" />
+          <text x="212" y="72" text-anchor="middle" class="dg-label">Fulfillment</text>
+          <text x="212" y="90" text-anchor="middle" class="dg-sub">Ship &amp; schedule</text>
+          <rect x="294" y="45" width="120" height="60" class="dg-box" rx="2" />
+          <text x="354" y="72" text-anchor="middle" class="dg-label">Installation</text>
+          <text x="354" y="90" text-anchor="middle" class="dg-sub">On-site setup</text>
+          <rect x="436" y="45" width="120" height="60" class="dg-box" rx="2" />
+          <text x="496" y="72" text-anchor="middle" class="dg-label">Clinical Training</text>
+          <text x="496" y="90" text-anchor="middle" class="dg-sub">Protocol &amp; use</text>
+          <rect x="578" y="45" width="120" height="60" class="dg-box" rx="2" />
+          <text x="638" y="72" text-anchor="middle" class="dg-label">Certification</text>
+          <text x="638" y="90" text-anchor="middle" class="dg-sub">Sign-off</text>
+          <rect x="720" y="45" width="110" height="60" class="dg-box-accent" rx="2" />
+          <text x="775" y="72" text-anchor="middle" class="dg-label">Marketing</text>
+          <text x="775" y="90" text-anchor="middle" class="dg-sub">Handoff</text>
+          <line x1="130" y1="75" x2="150" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+          <line x1="272" y1="75" x2="292" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+          <line x1="414" y1="75" x2="434" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+          <line x1="556" y1="75" x2="576" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+          <line x1="698" y1="75" x2="718" y2="75" class="dg-flow" marker-end="url(#arw2)" />
+        </svg>
+        <figcaption>Onboarding flow — one repeatable path from signed deal to a certified, live installation and a clean handoff to marketing and support.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 4. Strategy & marketing ===== -->
+    <section class="ops-section" id="strategy">
+      <span class="section-num">04 — Strategy</span>
+      <h2>Commercial Strategy &amp; Marketing</h2>
+      <div class="par-grid">
+        <div class="par-block">
+          <h4>Strategy authoring</h4>
+          <p>
+            Authored EndyMed's quarterly operations and marketing roadmaps and built the 2026
+            annual operating plan analysis and deck — market analysis, prioritized initiatives,
+            measurable targets, and resourcing asks — which leadership presented to global
+            stakeholders.
+          </p>
+        </div>
+        <div class="par-block">
+          <h4>Marketing direction</h4>
+          <p>
+            Own US marketing direction and prioritization, shifting lead generation from physical
+            outreach to digital — QR-code flyers, landing pages as campaign source pages, and
+            segmented email — while coordinating contractors on execution.
+          </p>
+        </div>
+      </div>
+      <p style="margin-top:1.5rem;font-size:0.95rem;color:var(--body);max-width:62ch;">
+        Alongside these, I run event operations for 30+ trade shows and conferences a year, with
+        lead capture and source tracking that feeds straight into the pipeline.
+      </p>
+    </section>
+
+  </div><!-- /wrap -->
+
+  <!-- ===== 5. Med Results portfolio (Canva embed) ===== -->
+  <section class="ops-section highlight" id="medresults">
+    <div class="wrap narrow">
+      <span class="section-num">05 — Portfolio</span>
+      <h2>Med Results Portfolio</h2>
+      <p style="font-size:0.98rem;color:var(--body);max-width:62ch;">
+        As Office Manager at Med Results, an aesthetic medical device distributor, I ran order and
+        event operations and helped run national training summits end to end. This portfolio is
+        embedded live from Canva, so it always reflects the latest version.
+      </p>
+
+      <div class="embed-16x9">
+        <iframe loading="lazy"
+          src="https://www.canva.com/design/DAGclQWn5dM/psQ4n59QT8Di7g5BKMPH2g/view?embed"
+          title="Brandon Acosta — Med Results Portfolio"
+          allow="fullscreen" allowfullscreen></iframe>
+      </div>
+      <p class="embed-caption">
+        Live Canva embed ·
+        <a href="https://www.canva.com/design/DAGclQWn5dM/psQ4n59QT8Di7g5BKMPH2g/view" target="_blank" rel="noopener">Open the full portfolio →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="fname">Brandon Acosta</span>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/acostab" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/acostabrandon" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:brandonacosta713@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

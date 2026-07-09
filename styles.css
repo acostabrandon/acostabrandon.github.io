@@ -536,6 +536,121 @@ section { padding: clamp(2.75rem, 6vw, 4.25rem) 0; }
   .artifact-grid { grid-template-columns: 1fr; }
 }
 
+/* ==========================================================================
+   About page — headshot header, contact row, timeline, skill chips
+   ========================================================================== */
+.about-head {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+.headshot {
+  width: 200px; height: 200px;
+  border-radius: 4px;
+  object-fit: cover;
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+}
+.headshot-ph {
+  width: 200px; height: 200px;
+  border-radius: 4px;
+  border: 1px dashed var(--line-strong);
+  background: var(--bg-alt);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center; padding: 1rem;
+  color: var(--muted);
+}
+.headshot-ph .shot-k { font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 0.3rem; }
+.headshot-ph .shot-file { font-size: 0.72rem; margin-top: 0.25rem; }
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+}
+.contact-row a, .contact-row span { color: var(--ink-soft); font-weight: 500; }
+.contact-row a:hover { color: var(--accent-dk); }
+
+/* Section heading with thin rule */
+.head-rule {
+  display: flex; align-items: baseline; gap: 1rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.6rem; margin-bottom: 1.75rem;
+}
+.head-rule h2 { margin: 0; }
+.head-rule .k { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+
+/* Experience timeline */
+.timeline { position: relative; margin: 0; padding: 0; list-style: none; }
+.timeline::before {
+  content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px;
+  width: 1px; background: var(--line);
+}
+.tl-item { position: relative; padding: 0 0 1.9rem 2.1rem; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item::before {
+  content: ""; position: absolute; left: 3px; top: 6px;
+  width: 9px; height: 9px; border-radius: 50%;
+  background: #fff; border: 2px solid var(--accent);
+}
+.tl-item.now::before { background: var(--accent); }
+.tl-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 0.9rem; }
+.tl-role { font-family: var(--serif); font-size: 1.12rem; color: var(--ink); font-weight: 500; }
+.tl-org { font-size: 0.95rem; color: var(--ink-soft); font-weight: 500; }
+.tl-date { font-size: 0.78rem; color: var(--muted); font-family: var(--sans); letter-spacing: 0.02em; margin-left: auto; }
+.tl-tag {
+  font-size: 0.64rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600;
+  color: var(--accent-dk); background: var(--bg-alt); border: 1px solid var(--line);
+  padding: 0.12rem 0.45rem; border-radius: 2px;
+}
+.tl-item p { margin: 0.5rem 0 0; font-size: 0.95rem; color: var(--body); max-width: 62ch; }
+
+/* Skill chips */
+.chip-group { margin-bottom: 1.5rem; }
+.chip-group h4 {
+  font-family: var(--sans); font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.14em; color: var(--accent); font-weight: 600; margin: 0 0 0.7rem;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip {
+  font-size: 0.82rem; color: var(--ink-soft); font-weight: 500;
+  background: var(--bg-alt); border: 1px solid var(--line);
+  padding: 0.32rem 0.7rem; border-radius: 3px;
+}
+
+/* Education list */
+.edu-list { margin: 0; padding: 0; list-style: none; }
+.edu-list li { padding: 0.9rem 0; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; align-items: baseline; }
+.edu-list li:last-child { border-bottom: 0; }
+.edu-list .deg { font-family: var(--serif); font-size: 1.02rem; color: var(--ink); font-weight: 500; }
+.edu-list .sch { font-size: 0.9rem; color: var(--ink-soft); }
+.edu-list .yr { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+
+/* Two-column info blocks (languages / certs / honors) */
+.info-cols {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: clamp(1.25rem, 3vw, 2.5rem); margin-top: 1.5rem;
+}
+
+/* Responsive Canva / video embed (16:9) */
+.embed-16x9 {
+  position: relative; width: 100%; height: 0; padding-top: 56.25%;
+  border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin-top: 1.5rem;
+  background: var(--bg-alt);
+}
+.embed-16x9 iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.embed-caption { font-size: 0.82rem; color: var(--muted); margin-top: 0.7rem; }
+
+@media (max-width: 640px) {
+  .about-head { grid-template-columns: 1fr; }
+  .headshot, .headshot-ph { width: 150px; height: 150px; }
+  .tl-date { margin-left: 0; width: 100%; }
+}
+
 /* Print */
 @media print {
   .site-nav, .subnav, .nav-toggle, .site-footer { display: none; }
