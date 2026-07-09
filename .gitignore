@@ -1,0 +1,15 @@
+# Working / staging folders — never publish
+_redactwork/
+_work/
+*.tmp
+
+# UNREDACTED source screenshots — NEVER publish (contains live customer data)
+images/crm-src/
+images/onboarding-src/
+
+# Heavy pre-optimization PNGs — the optimized .jpg are published instead
+images/crm/*.png
+images/onboarding/*.png
+
+# OS cruft
+.DS_Store

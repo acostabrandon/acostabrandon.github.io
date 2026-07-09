@@ -29,6 +29,7 @@
       <a class="subtab active" href="#rfm">Install-Base &amp; RFM</a>
       <a class="subtab" href="#crm">CRM Engineering</a>
       <a class="subtab" href="#onboarding">Onboarding</a>
+      <a class="subtab" href="#sop">SOP Development</a>
       <a class="subtab" href="#strategy">Strategy &amp; Marketing</a>
       <a class="subtab" href="#medresults">Med Results</a>
     </nav>
@@ -118,6 +119,75 @@
         </svg>
         <figcaption>Three siloed systems unified into one install-base model and scored with RFM. Grid is illustrative sample data, not actual account values.</figcaption>
       </figure>
+
+      <p class="cap-lede" style="margin-top:2.25rem;"><b style="font-family:var(--sans);color:var(--ink);">How the model was assembled.</b> The hard part wasn't the RFM math — it was building one trustworthy dataset out of three systems that didn't talk to each other, joined on a single shared key.</p>
+
+      <figure class="diagram" style="background:#fff;">
+        <svg viewBox="0 0 820 320" role="img" aria-label="Data pipeline: Priority ERP accounts and serial records plus Shopify purchase history are normalized and joined on a shared key into an install-base master, scored with RFM and CLV, then split by territory and enriched into a top-30 and re-engagement targets.">
+          <defs>
+            <marker id="arwp" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 z" class="dg-arrow-head" /></marker>
+          </defs>
+          <text x="20" y="34" class="dg-sub">SOURCE SYSTEMS</text>
+          <rect x="20" y="48" width="172" height="42" class="dg-box" rx="2" />
+          <text x="34" y="70" class="dg-label">Priority ERP</text>
+          <text x="34" y="84" class="dg-sub">600+ accounts</text>
+          <rect x="20" y="100" width="172" height="42" class="dg-box" rx="2" />
+          <text x="34" y="122" class="dg-label">Priority ERP</text>
+          <text x="34" y="136" class="dg-sub">2,000+ serials · warranty</text>
+          <rect x="20" y="152" width="172" height="42" class="dg-box" rx="2" />
+          <text x="34" y="174" class="dg-label">Shopify</text>
+          <text x="34" y="188" class="dg-sub">spend &amp; order history</text>
+
+          <text x="250" y="34" class="dg-sub">CLEAN &amp; JOIN</text>
+          <rect x="250" y="78" width="150" height="40" class="dg-box" rx="2" />
+          <text x="325" y="102" text-anchor="middle" class="dg-label">Normalize &amp; dedupe</text>
+          <rect x="250" y="128" width="150" height="46" class="dg-box-accent" rx="2" />
+          <text x="325" y="150" text-anchor="middle" class="dg-label">Join on</text>
+          <text x="325" y="166" text-anchor="middle" class="dg-label">priority_key</text>
+
+          <text x="458" y="34" class="dg-sub">MODEL</text>
+          <rect x="458" y="70" width="176" height="52" class="dg-box-accent" rx="2" />
+          <text x="546" y="92" text-anchor="middle" class="dg-label">Install-base master</text>
+          <text x="546" y="108" text-anchor="middle" class="dg-sub">one unified account view</text>
+          <rect x="458" y="132" width="176" height="46" class="dg-box" rx="2" />
+          <text x="546" y="154" text-anchor="middle" class="dg-label">RFM + CLV scoring</text>
+          <text x="546" y="170" text-anchor="middle" class="dg-sub">recency · frequency · value</text>
+
+          <text x="668" y="34" class="dg-sub">ACTIVATE</text>
+          <rect x="668" y="55" width="140" height="42" class="dg-box" rx="2" />
+          <text x="738" y="72" text-anchor="middle" class="dg-label">Territory splits</text>
+          <text x="738" y="88" text-anchor="middle" class="dg-sub">per rep</text>
+          <rect x="668" y="105" width="140" height="42" class="dg-box" rx="2" />
+          <text x="738" y="122" text-anchor="middle" class="dg-label">Top-30 enrichment</text>
+          <text x="738" y="138" text-anchor="middle" class="dg-sub">by tip revenue</text>
+          <rect x="668" y="155" width="140" height="42" class="dg-box-accent" rx="2" />
+          <text x="738" y="172" text-anchor="middle" class="dg-label">Re-engagement</text>
+          <text x="738" y="188" text-anchor="middle" class="dg-sub">targets</text>
+
+          <path d="M192,71 C215,71 220,96 248,98" class="dg-flow" marker-end="url(#arwp)" />
+          <path d="M192,121 L248,110" class="dg-flow" marker-end="url(#arwp)" />
+          <path d="M192,173 C215,173 220,120 248,118" class="dg-flow" marker-end="url(#arwp)" />
+          <path d="M400,150 C425,150 430,100 456,98" class="dg-flow" marker-end="url(#arwp)" />
+          <path d="M634,120 C650,120 652,80 666,78" class="dg-flow" marker-end="url(#arwp)" />
+          <path d="M634,150 L666,126" class="dg-flow" marker-end="url(#arwp)" />
+          <path d="M634,158 C650,158 652,172 666,174" class="dg-flow" marker-end="url(#arwp)" />
+        </svg>
+        <figcaption>The install-base pipeline — Priority ERP and Shopify unified on a shared key, scored with RFM and CLV, then activated into territory books, a top-30 by tip revenue, and prioritized re-engagement targets. Counts are rounded; no account data shown.</figcaption>
+      </figure>
+
+      <p class="cap-lede" style="margin-top:2.25rem;"><b style="font-family:var(--sans);color:var(--ink);">The output.</b> This analysis became the 2026 re-engagement strategy — presented to leadership. Redacted deck below.</p>
+
+      <figure class="deck" style="background:#fff;">
+        <div class="deck-embed" style="background:#fff;">
+          <div class="deck-fallback"><span class="ph-k">Redacted deck</span><span class="ph-file">decks/AOP-2026-RFM_REDACTED.pdf</span></div>
+          <iframe src="decks/AOP-2026-RFM_REDACTED.pdf#view=FitH" title="2026 install-base &amp; RFM re-engagement strategy (redacted)" loading="lazy"></iframe>
+        </div>
+        <div class="deck-bar">
+          <span class="deck-file">2026 install-base &amp; RFM strategy — redacted</span>
+          <a class="btn-open" href="decks/AOP-2026-RFM_REDACTED.pdf" target="_blank" rel="noopener">Open full deck →</a>
+        </div>
+      </figure>
+      <p class="redacted-note">Deck is redacted for the public site — segment counts, dollar values, and account details removed. Full version available on request.</p>
     </div>
   </section>
 
@@ -189,6 +259,52 @@
         </svg>
         <figcaption>CRM architecture — lead sources feed validated intake into one standardized system, driving automated routing and live leadership reporting.</figcaption>
       </figure>
+
+      <p class="cap-lede" style="margin-top:2.25rem;"><b style="font-family:var(--sans);color:var(--ink);">The system, in practice.</b> A walkthrough of the CRM I built in Monday.com — from lead capture to a live leadership dashboard. All customer data is redacted.</p>
+
+      <div class="ss-gallery">
+        <figure class="ss-item wide">
+          <a class="ss-fig" href="images/crm/leads-inbox.jpg" target="_blank" rel="noopener"><img src="images/crm/leads-inbox.jpg" alt="Company Leads Inbox (redacted)" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Company Leads Inbox.</b> Every lead from every source lands here first and is standardized into the same required fields — name, custom greeting, email, phone, and occupation category — before anything else happens.</figcaption>
+        </figure>
+
+        <figure class="ss-item">
+          <a class="ss-fig" href="images/crm/intake-form.jpg" target="_blank" rel="noopener"><img src="images/crm/intake-form.jpg" alt="Digital lead-intake form" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Digital intake form.</b> A standardized capture form with required fields, so data integrity is enforced at the point of entry instead of cleaned up later.</figcaption>
+        </figure>
+
+        <figure class="ss-item">
+          <a class="ss-fig" href="images/crm/leads-board.jpg" target="_blank" rel="noopener"><img src="images/crm/leads-board.jpg" alt="Territory lead board (redacted)" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Territory lead board.</b> Every rep works an identical, locked board layout — same columns, required fields, and statuses — so data stays consistent across the whole team.</figcaption>
+        </figure>
+
+        <figure class="ss-item wide">
+          <a class="ss-fig" href="images/crm/zap-routing.jpg" target="_blank" rel="noopener"><img src="images/crm/zap-routing.jpg" alt="Automated territory routing" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Automated territory routing.</b> When a lead arrives it is formatted, given a custom greeting, and routed to the correct territory board by geography (CA/NV, AZ/UT/CO/NM, FL/PR, with a fallback) — no manual triage.</figcaption>
+        </figure>
+
+        <figure class="ss-item wide">
+          <a class="ss-fig" href="images/crm/zap-lifecycle.jpg" target="_blank" rel="noopener"><img src="images/crm/zap-lifecycle.jpg" alt="Lead-to-deal lifecycle automation" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Lead-to-deal lifecycle.</b> When a lead qualifies, automation creates the contact, account, and deal, links them together, dedupes against existing records, and archives the lead — eliminating manual data entry.</figcaption>
+        </figure>
+
+        <figure class="ss-item wide">
+          <a class="ss-fig" href="images/crm/deals-board.jpg" target="_blank" rel="noopener"><img src="images/crm/deals-board.jpg" alt="Deal pipeline (redacted)" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Deal pipeline.</b> Weighted stages from 25% (lead developed) through 100% (closed won), giving leadership a live, consistent forecast view. Deal names and values redacted.</figcaption>
+        </figure>
+
+        <figure class="ss-item">
+          <a class="ss-fig" href="images/crm/install-base.jpg" target="_blank" rel="noopener"><img src="images/crm/install-base.jpg" alt="Install-base board (redacted)" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Install-base board.</b> Unified customer records with an engagement-status column — the foundation for the RFM re-engagement work in the section above.</figcaption>
+        </figure>
+
+        <figure class="ss-item">
+          <a class="ss-fig" href="images/crm/dashboard.jpg" target="_blank" rel="noopener"><img src="images/crm/dashboard.jpg" alt="Managerial sales dashboard (redacted)" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Managerial dashboard.</b> Forecasted revenue, deal-status distribution, and stage breakdown by rep — refreshed live from the boards for leadership. Dollar figures and names redacted.</figcaption>
+        </figure>
+      </div>
+
+      <p class="redacted-note">Screenshots are from the live CRM with all customer names, emails, phones, addresses, and deal values blacked out. Click any image to view it larger.</p>
     </section>
 
     <!-- ===== 3. Onboarding ===== -->
@@ -248,11 +364,156 @@
         </svg>
         <figcaption>Onboarding flow — one repeatable path from signed deal to a certified, live installation and a clean handoff to marketing and support.</figcaption>
       </figure>
+
+      <p class="cap-lede" style="margin-top:2.25rem;"><b style="font-family:var(--sans);color:var(--ink);">The protocol.</b> Every capital-equipment deal runs the same seven-step path, coordinated across operations, clinical training, fulfillment, and bookkeeping. Each step has a defined trigger, owner, and board stage.</p>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="role">Operations</span>
+          <h4>Welcome email — pre-shipment</h4>
+          <p>On order confirmation from the 3PL warehouse partner and approval in the ERP, the project is marked "Order Confirmed" and a welcome email goes out with the clinic-locator form and marketing folder.</p>
+        </li>
+        <li class="step">
+          <span class="role">Operations</span>
+          <h4>Shipment &amp; delivery</h4>
+          <p>Tracking is sent to the client automatically on ship. The board moves to "Shipped," the deal to "Closed Won," and the delivery date is logged to trigger the installation email.</p>
+        </li>
+        <li class="step">
+          <span class="role">Sales Rep + Operations</span>
+          <h4>Installation &amp; verification</h4>
+          <p>Schedule the install, test the device, collect a signed installation form, and verify the serial number against the order; the board moves to "Installation Complete."</p>
+        </li>
+        <li class="step">
+          <span class="role">Clinical Coordinator</span>
+          <h4>Schedule training — post-install</h4>
+          <p>Reach out for three days of availability within the next few weeks and set the date; the board moves to "Training Scheduled."</p>
+        </li>
+        <li class="step">
+          <span class="role">Clinical Trainer</span>
+          <h4>Training confirmation</h4>
+          <p>Send a confirmation email with a preparation checklist, trainer contact, and pre-education resources; the board moves to "Training Confirmed."</p>
+        </li>
+        <li class="step">
+          <span class="role">Clinical Coordinator</span>
+          <h4>Training completion</h4>
+          <p>Run the full-day training, send the post-training email (consumables reorder, support contacts, feedback form), and request certification; the board moves to "Training Completed."</p>
+        </li>
+        <li class="step">
+          <span class="role">Operations</span>
+          <h4>30-day check-in</h4>
+          <p>Send a check-in email, confirm the client is satisfied and supported, and close the project.</p>
+        </li>
+      </ol>
+
+      <p class="cap-lede" style="margin-top:2.5rem;"><b style="font-family:var(--sans);color:var(--ink);">The system behind it.</b> The protocol runs on one shared board with supporting automation and standardized templates. All customer data is redacted.</p>
+
+      <div class="ss-gallery">
+        <figure class="ss-item wide">
+          <a class="ss-fig" href="images/onboarding/onboarding-board.jpg" target="_blank" rel="noopener"><img src="images/onboarding/onboarding-board.jpg" alt="Client Onboarding board (redacted)" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Client Onboarding board.</b> Every capital-equipment deal tracked from Order Confirmed to Closed, with device, handpieces, funding status, shipping, and training dates in one shared view across operations, clinical, and fulfillment.</figcaption>
+        </figure>
+
+        <figure class="ss-item">
+          <a class="ss-fig" href="images/onboarding/onboarding-zap.jpg" target="_blank" rel="noopener"><img src="images/onboarding/onboarding-zap.jpg" alt="Training-scheduling automation" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Training-scheduling automation.</b> When a project reaches the right stage, automation finds the contact and stages the training-scheduling email, so nothing waits on a manual reminder.</figcaption>
+        </figure>
+
+        <figure class="ss-item">
+          <a class="ss-fig" href="images/onboarding/clinic-locator-form.jpg" target="_blank" rel="noopener"><img src="images/onboarding/clinic-locator-form.jpg" alt="Endymed Clinic Locator intake form" loading="lazy" /></a>
+          <figcaption class="ss-cap"><b>Clinic Locator intake form.</b> Standardized practice details captured during onboarding to power the public clinic locator.</figcaption>
+        </figure>
+      </div>
+
+      <p class="cap-lede" style="margin-top:2.5rem;"><b style="font-family:var(--sans);color:var(--ink);">Standardized communications.</b> Each step has a template so the client experience is consistent regardless of who sends it. For example, the training-scheduling email:</p>
+
+      <div class="email-card">
+        <div class="email-head">
+          <span class="subj">Schedule your PRO MAX clinical training</span>
+          From: Operations, EndyMed &nbsp;·&nbsp; To: [Client]
+        </div>
+        <div class="email-body">
+          <p>Congratulations on adding the EndyMed PRO MAX system to your practice. Your next step is to schedule your in-person clinical training — a hands-on, full-day session with your assigned clinical trainer (typically 9:00 AM–4:00 PM).</p>
+          <p>Please reply with:<br />
+            a) two to three full-day dates that work for your team over the next two weeks, and<br />
+            b) the names and roles of each participant.</p>
+          <p>A preparation folder with the training schedule, prep guide, and protocols is linked below.</p>
+          <p class="muted">Recreated from the live template — client and trainer details shown as sample placeholders.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== 4. Strategy & marketing ===== -->
+    <!-- ===== 4. SOP Development ===== -->
+    <section class="ops-section" id="sop">
+      <span class="section-num">04 — Standardization</span>
+      <h2>SOP Development</h2>
+      <div class="par-grid">
+        <div class="par-block">
+          <h4>What I did</h4>
+          <p>
+            As the team and product line grew, I wrote and standardized the operating procedures
+            that keep post-sale operations consistent — a portfolio of SOPs across order
+            management, clinical training, service, and events, each defining the trigger, steps,
+            owner, and systems involved.
+          </p>
+        </div>
+        <div class="par-block">
+          <h4>Why it mattered</h4>
+          <p>
+            Documented procedures replaced tribal knowledge, controlled logistics and service
+            costs, and let anyone on the team run a process the same way — essential for a lean
+            operation covering a national footprint.
+          </p>
+        </div>
+      </div>
+
+      <p class="cap-lede" style="margin-top:1.75rem;"><b style="font-family:var(--sans);color:var(--ink);">The portfolio.</b> A representative sample of the SOPs I developed and standardized.</p>
+
+      <div class="sop-grid">
+        <div class="sop-card">
+          <h4>Customer Order Management</h4>
+          <p>Signed PQ → ERP entry → inventory &amp; serial verification → shipment → install &amp; training → invoicing → onboarding.</p>
+          <div class="chips"><span class="chip">Priority ERP</span><span class="chip">Monday CRM</span><span class="chip">Zoho Sign</span><span class="chip">SharePoint</span></div>
+        </div>
+        <div class="sop-card">
+          <h4>Clinical Training Coordination</h4>
+          <p>Prepare customers and trainers for successful installs — resource folders, scheduling, prep materials, and certificates.</p>
+          <div class="chips"><span class="chip">Outlook</span><span class="chip">SharePoint</span><span class="chip">Monday CRM</span></div>
+        </div>
+        <div class="sop-card">
+          <h4>Replacement Tip Request</h4>
+          <p>Standardize defective-consumable claims while cutting shipping cost — default to store credit, escalate repeats.</p>
+          <div class="chips"><span class="chip">Zendesk</span><span class="chip">Shopify</span><span class="chip">Priority ERP</span></div>
+        </div>
+        <div class="sop-card">
+          <h4>CRM Lead-to-Customer</h4>
+          <p>Consistent handling from lead intake → territory → deal → pipeline stages → onboarding handoff at Closed Won.</p>
+          <div class="chips"><span class="chip">Monday CRM</span><span class="chip">Zapier</span><span class="chip">Mailchimp</span></div>
+        </div>
+        <div class="sop-card">
+          <h4>Shipping &amp; Service Approval</h4>
+          <p>Control logistics cost — ground by default, approval thresholds for expedited, documented service expenses.</p>
+          <div class="chips"><span class="chip">3PL partner</span><span class="chip">Zendesk</span><span class="chip">Priority ERP</span></div>
+        </div>
+        <div class="sop-card">
+          <h4>Event Lead Management</h4>
+          <p>Standardize post-event handling — import, dedupe, assign territory, trigger follow-up automation.</p>
+          <div class="chips"><span class="chip">Monday CRM</span><span class="chip">Zapier</span></div>
+        </div>
+      </div>
+
+      <p class="cap-lede" style="margin-top:2rem;"><b style="font-family:var(--sans);color:var(--ink);">An example — the Tip Replacement Request process.</b> Each SOP defines the full workflow end to end. For instance:</p>
+      <ol class="steps">
+        <li class="step"><h4>Receive request</h4><p>Collect the issue details, tip type, quantity, lot number, and supporting photos.</p></li>
+        <li class="step"><h4>Review eligibility</h4><p>Determine warranty coverage versus manufacturing defect, shipping damage, or misuse.</p></li>
+        <li class="step"><h4>Determine resolution</h4><p>Default to Shopify store credit rather than shipping a physical replacement, unless immediate patient care requires it.</p></li>
+        <li class="step"><h4>Document</h4><p>Log the order, resolution, credit amount, approval, and repeat history in Zendesk.</p></li>
+        <li class="step"><h4>Escalate</h4><p>Route repeat or high-value issues to management for review.</p></li>
+      </ol>
+    </section>
+
+    <!-- ===== 5. Strategy & marketing ===== -->
     <section class="ops-section" id="strategy">
-      <span class="section-num">04 — Strategy</span>
+      <span class="section-num">05 — Strategy</span>
       <h2>Commercial Strategy &amp; Marketing</h2>
       <div class="par-grid">
         <div class="par-block">
@@ -277,6 +538,15 @@
         Alongside these, I run event operations for 30+ trade shows and conferences a year, with
         lead capture and source tracking that feeds straight into the pipeline.
       </p>
+
+      <p class="cap-lede" style="margin-top:2.25rem;"><b style="font-family:var(--sans);color:var(--ink);">Digitalizing the marketing.</b> I shifted lead generation from physical outreach to digital — QR-code flyers and provider case studies that drive to dedicated campaign landing pages, backed by segmented email. The flagship example is the Launch Support Program:</p>
+
+      <div class="link-cta">
+        <a class="btn" href="https://endymedusa.com/12k-rebate" target="_blank" rel="noopener">View the live landing page →</a>
+        <span class="url">endymedusa.com/12k-rebate</span>
+      </div>
+
+      <p class="redacted-note" style="margin-top:1.75rem;">Campaign flyers I designed and the decks I used to roll these out to the sales team are being prepared for this section — see the note in chat about which pieces to feature.</p>
     </section>
 
   </div><!-- /wrap -->
@@ -284,7 +554,7 @@
   <!-- ===== 5. Med Results portfolio (Canva embed) ===== -->
   <section class="ops-section highlight" id="medresults">
     <div class="wrap narrow">
-      <span class="section-num">05 — Portfolio</span>
+      <span class="section-num">06 — Portfolio</span>
       <h2>Med Results Portfolio</h2>
       <p style="font-size:0.98rem;color:var(--body);max-width:62ch;">
         As Office Manager at Med Results, an aesthetic medical device distributor, I ran order and

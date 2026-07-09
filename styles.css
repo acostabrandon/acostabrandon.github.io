@@ -651,6 +651,61 @@ section { padding: clamp(2.75rem, 6vw, 4.25rem) 0; }
   .tl-date { margin-left: 0; width: 100%; }
 }
 
+/* ==========================================================================
+   Captioned screenshot gallery (CRM / onboarding)
+   ========================================================================== */
+.ss-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; margin-top: 1.75rem; }
+.ss-item { margin: 0; }
+.ss-item.wide { grid-column: 1 / -1; }
+.ss-fig { display: block; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--bg-alt); }
+.ss-fig img { width: 100%; display: block; }
+.ss-cap { margin-top: 0.6rem; font-size: 0.9rem; color: var(--body); line-height: 1.55; }
+.ss-cap b { color: var(--ink); font-weight: 600; font-family: var(--sans); }
+.ss-ph {
+  aspect-ratio: 16 / 10; border: 1px dashed var(--line-strong); background: var(--bg-alt);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 1rem; color: var(--muted); border-radius: 4px;
+}
+.ss-ph .k { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.ss-ph .f { font-size: 0.78rem; margin-top: 0.3rem; }
+
+/* Numbered process steps */
+.steps { margin: 1.75rem 0 0; padding: 0; list-style: none; counter-reset: s; }
+.step { position: relative; padding: 0 0 1.25rem 2.6rem; border-left: 1px solid var(--line); margin-left: 0.8rem; }
+.step:last-child { border-left-color: transparent; padding-bottom: 0; }
+.step::before {
+  counter-increment: s; content: counter(s);
+  position: absolute; left: -0.85rem; top: -0.15rem; width: 1.7rem; height: 1.7rem;
+  border-radius: 50%; background: var(--ink); color: #fff;
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 600;
+  display: flex; align-items: center; justify-content: center;
+}
+.step h4 { font-family: var(--serif); font-size: 1.02rem; color: var(--ink); font-weight: 600; margin: 0 0 0.2rem; }
+.step p { font-size: 0.92rem; color: var(--body); margin: 0.15rem 0 0; max-width: 66ch; }
+.step .role { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-dk); font-weight: 600; }
+
+/* Email mockup card */
+.email-card { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; margin-top: 1.75rem; max-width: 640px; }
+.email-head { background: var(--bg-alt); padding: 0.9rem 1.1rem; border-bottom: 1px solid var(--line); font-size: 0.83rem; color: var(--muted); }
+.email-head .subj { color: var(--ink); font-weight: 600; font-family: var(--sans); font-size: 0.95rem; display: block; margin-bottom: 0.15rem; }
+.email-body { padding: 1.2rem 1.3rem; font-size: 0.92rem; color: var(--body); line-height: 1.6; }
+.email-body p { margin: 0 0 0.7rem; }
+.email-body .muted { color: var(--muted); font-size: 0.85rem; }
+
+/* SOP portfolio cards */
+.sop-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1.75rem; }
+.sop-card { border: 1px solid var(--line); border-radius: 6px; padding: 1.25rem 1.35rem; }
+.sop-card h4 { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); font-weight: 600; margin: 0 0 0.4rem; }
+.sop-card p { font-size: 0.9rem; color: var(--body); margin: 0 0 0.85rem; }
+.sop-card .chips { gap: 0.4rem; }
+.sop-card .chip { font-size: 0.72rem; padding: 0.22rem 0.55rem; }
+
+/* Inline link button (public landing page etc.) */
+.link-cta { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; }
+.link-cta .url { font-size: 0.85rem; color: var(--muted); font-family: var(--sans); }
+
+@media (max-width: 720px) { .ss-gallery, .sop-grid { grid-template-columns: 1fr; } }
+
 /* Print */
 @media print {
   .site-nav, .subnav, .nav-toggle, .site-footer { display: none; }
