@@ -866,7 +866,8 @@ button.ev-head:hover { background: #f0f1ee; }
 .ev-step.open .ev-toggle .lbl-closed { display: none; }
 .ev-toggle .lbl-open { display: none; }
 .ev-step.open .ev-toggle .lbl-open { display: inline; }
-.ev-sub { padding: 0.95rem 1.2rem 0; font-size: 0.95rem; color: var(--body); max-width: 74ch; }
+.ev-sub { padding: 0.95rem 1.2rem 1.15rem; font-size: 0.95rem; color: var(--body); max-width: 74ch; }
+.ev-step.open .ev-sub { padding-bottom: 0.55rem; }
 .ev-panel { max-height: 0; overflow: hidden; transition: max-height .42s cubic-bezier(.22,.61,.36,1); }
 .ev-panel-inner { padding: 1rem 1.2rem 1.2rem; }
 .ev-panel-inner img { width: 100%; border: 1px solid var(--line); border-radius: 6px; display: block; }
@@ -882,6 +883,48 @@ button.ev-head:hover { background: #f0f1ee; }
 
 /* Centered anchor sub-nav */
 .subnav-inner { justify-content: center; }
+
+/* ============ Revision components ============ */
+/* Scrollable document (PDF) viewer variant */
+.deck.doc .deck-embed { aspect-ratio: auto; height: 600px; background: #f4f4f2; }
+@media (max-width: 720px) { .deck.doc .deck-embed { height: 460px; } }
+
+/* Single prominent screenshot figure */
+.shot { margin: 1.6rem 0 0; }
+.shot img { width: 100%; border: 1px solid var(--line); border-radius: 10px; display: block; box-shadow: 0 1px 3px rgba(21,35,59,.05); }
+.shot figcaption { font-family: var(--sans); font-size: 0.82rem; color: var(--muted); margin-top: 0.7rem; }
+.shot.hero-shot img { transition: transform .35s cubic-bezier(.22,.61,.36,1), box-shadow .35s; }
+.js .shot.hero-shot img:hover { transform: translateY(-3px); box-shadow: 0 16px 38px rgba(21,35,59,.13); }
+
+/* Result outcome cards: clean single column on mobile (avoids 2+1 orphan) */
+@media (max-width: 760px) { .outcome-cards { grid-template-columns: 1fr; } }
+
+/* Premium vertical process pipeline (replaces cramped .flow) */
+.pipeline { margin: 1.85rem 0 0; }
+.pl-stage { display: grid; grid-template-columns: 46px 1fr; gap: 1.15rem; }
+.pl-rail { display: flex; flex-direction: column; align-items: center; }
+.pl-num { width: 46px; height: 46px; border-radius: 50%; background: #fff; border: 1.5px solid var(--line-strong); color: var(--ink); font-family: var(--sans); font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; flex: 0 0 auto; z-index: 1; }
+.pl-line { flex: 1; width: 2px; background: var(--line); min-height: 16px; }
+.pl-stage:last-child .pl-line { display: none; }
+.pl-body { padding: 0.6rem 0 1.5rem; }
+.pl-stage:last-child .pl-body { padding-bottom: 0; }
+.pl-t { font-family: var(--serif); font-size: 1.12rem; font-weight: 600; color: var(--ink); line-height: 1.2; }
+.pl-s { font-size: 0.9rem; color: var(--body); margin-top: 0.28rem; max-width: 62ch; }
+.pl-stage.key .pl-num { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 4px 14px rgba(154,123,79,.32); }
+.pl-stage.key .pl-t { color: var(--accent-dk); }
+.js .pl-stage .pl-num { transition: transform .3s ease; }
+.js .pl-stage:hover .pl-num { transform: scale(1.09); }
+
+/* Transformation deep-dive: markers + before/after impact chips */
+.compare-col.old ol, .compare-col.new ol { padding-left: 0; }
+.compare-col.old ol li, .compare-col.new ol li { list-style: none; position: relative; padding-left: 1.55rem; }
+.compare-col.old ol li::before { content: "\2715"; position: absolute; left: 0; top: 1px; color: #c08e8e; font-weight: 700; font-size: 0.82rem; }
+.compare-col.new ol li::before { content: "\2713"; position: absolute; left: 0; top: 1px; color: var(--accent); font-weight: 700; font-size: 0.88rem; }
+.impact-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 0.9rem; margin-top: 1.6rem; }
+.impact-chip { border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; padding: 0.9rem 1.05rem; background: var(--bg-alt); }
+.impact-chip .ic-from { font-size: 0.82rem; color: var(--muted); text-decoration: line-through; }
+.impact-chip .ic-to { font-family: var(--sans); font-size: 0.92rem; font-weight: 600; color: var(--ink); margin-top: 0.25rem; }
+.impact-chip .ic-to::before { content: "\2192\00a0"; color: var(--accent); }
 
 /* Larger project titles for hierarchy */
 #crm h2, #onboarding h2, #rfm h2, #pq h2, #ops h2, #install-base h2,
