@@ -88,3 +88,63 @@
   lb.addEventListener('click', close);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
 })();
+
+/* Scroll reveal + staggered card reveals. */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal, .stagger');
+  if (!els.length) return;
+  if (reduce || !('IntersectionObserver' in window)) {
+    els.forEach(function (e) { e.classList.add('in'); });
+    return;
+  }
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('in'); obs.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+  els.forEach(function (e) { obs.observe(e); });
+})();
+
+/* Expandable evidence (accordion) with smooth height + lazy-image recompute. */
+(function () {
+  var steps = document.querySelectorAll('.ev-step[data-accordion]');
+  if (!steps.length) return;
+  steps.forEach(function (step) {
+    var head = step.querySelector('.ev-head');
+    var panel = step.querySelector('.ev-panel');
+    if (!head || !panel) return;
+    head.setAttribute('aria-expanded', 'false');
+
+    head.addEventListener('click', function () {
+      var isOpen = step.classList.contains('open');
+      if (!isOpen) {
+        step.classList.add('open');
+        head.setAttribute('aria-expanded', 'true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        var done = function () {
+          if (step.classList.contains('open')) panel.style.maxHeight = 'none';
+          panel.removeEventListener('transitionend', done);
+        };
+        panel.addEventListener('transitionend', done);
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            step.classList.remove('open');
+            head.setAttribute('aria-expanded', 'false');
+            panel.style.maxHeight = '0px';
+          });
+        });
+      }
+    });
+
+    panel.querySelectorAll('img').forEach(function (img) {
+      img.addEventListener('load', function () {
+        if (step.classList.contains('open') && panel.style.maxHeight !== 'none') {
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      });
+    });
+  });
+})();

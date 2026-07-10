@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio — Brandon Acosta</title>
-  <meta name="description" content="Event operations and follow-up standardization, campaign design and digital conversion, and the Med Results portfolio." />
+  <meta name="description" content="Event operations and follow-up standardization, multi-audience campaign design, and the Med Results portfolio." />
   <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -40,7 +41,7 @@
       <h1>Marketing, Events &amp; Design</h1>
       <p class="lede">
         The creative and commercial side of the work — running national events, standardizing the
-        follow-up that turns them into pipeline, and designing the campaigns that carry the brand.
+        follow-up that turns them into pipeline, and designing campaigns for distinct audiences.
       </p>
     </div>
   </header>
@@ -49,23 +50,24 @@
 
     <!-- ===== Event Operations & Follow-Up ===== -->
     <section class="ops-section" id="events">
-      <span class="section-num">01 — Events</span>
-      <h2>Event Operations &amp; Follow-Up Standardization</h2>
-      <p class="case-tagline">Running national events, then standardizing the follow-up that converts them.</p>
-      <p style="font-size:0.98rem;color:var(--body);max-width:72ch;margin-top:1.25rem;">
-        I standardized how EndyMed runs national trade shows and events end to end — and, just as
-        important, how we follow up afterward so leads actually convert.
-      </p>
-      <div class="chips" style="margin-top:1rem;">
-        <span class="chip">Event rollout strategy</span>
-        <span class="chip">Event checklist</span>
-        <span class="chip">QR lead capture</span>
-        <span class="chip">Territory routing</span>
-        <span class="chip">Automated follow-up sequence</span>
+      <span class="section-num reveal">01 — Events</span>
+      <h2 class="reveal">Event Operations &amp; Follow-Up Standardization</h2>
+      <p class="case-tagline reveal">Running national events, then standardizing the follow-up that converts them.</p>
+
+      <div class="outcomes stagger">
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Event Rollout Strategy</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>QR Lead Capture</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Territory Routing</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Automated Follow-Up</span>
       </div>
 
-      <p class="cap-lede" style="margin-top:2rem;"><b style="font-family:var(--sans);color:var(--ink);">Event rollout deck.</b> The strategy I used to deploy events to the team — calendar invites, a responsibilities matrix, QR-driven lead capture per territory, and an automated post-event email sequence (redacted):</p>
-      <figure class="deck">
+      <div class="star-block reveal">
+        <span class="star-tag action">Action</span>
+        <p>I standardized how EndyMed runs national trade shows end to end — and, just as important, the automated follow-up that turns event leads into pipeline.</p>
+      </div>
+
+      <p class="cap-lede reveal" style="margin-top:1.5rem;"><b style="font-family:var(--sans);color:var(--ink);">Event rollout deck.</b> The strategy I used to deploy events to the team — calendar invites, a responsibilities matrix, QR-driven lead capture per territory, and an automated post-event email sequence (redacted):</p>
+      <figure class="deck reveal">
         <div class="deck-embed">
           <div class="deck-fallback"><span class="ph-k">Redacted deck</span><span class="ph-file">decks/Empire-Events_REDACTED.pdf</span></div>
           <iframe src="decks/Empire-Events_REDACTED.pdf#view=FitH" title="Event management &amp; attendance strategy (redacted)" loading="lazy"></iframe>
@@ -76,64 +78,99 @@
         </div>
       </figure>
 
-      <p class="cap-lede" style="margin-top:2.25rem;"><b style="font-family:var(--sans);color:var(--ink);">The standardized follow-up.</b> Every event feeds an automated email sequence, built and sent through Mailchimp — for example, this post-event campaign:</p>
-      <figure style="margin:1.25rem 0 0;">
-        <img class="zoom" src="images/proj/mailchimp.jpg" alt="Standardized post-event Mailchimp campaign" loading="lazy" style="width:100%;max-width:620px;border:1px solid var(--line);border-radius:8px;display:block;" />
-        <figcaption class="ev-cap">A standardized post-event Mailchimp campaign. Patient imagery and any named provider are redacted; click to enlarge.</figcaption>
-      </figure>
+      <p class="cap-lede reveal" style="margin-top:2rem;"><b style="font-family:var(--sans);color:var(--ink);">The standardized follow-up.</b> Every event feeds an automated Mailchimp sequence:</p>
+      <div class="ev-steps">
+        <div class="ev-step reveal" data-accordion>
+          <button class="ev-head" type="button"><span class="ev-n">■</span><span class="ev-t">Post-event email campaign</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+          <div class="ev-sub">A standardized post-event Mailchimp campaign — patient imagery and any named provider are redacted.</div>
+          <div class="ev-panel"><div class="ev-panel-inner"><img class="zoom" src="images/proj/mailchimp.jpg" alt="Standardized post-event Mailchimp campaign" loading="lazy" /></div></div>
+        </div>
+      </div>
+
+      <div class="takeaway reveal">
+        <span class="tk-label">Takeaway</span>
+        <p>Events stopped being one-off scrambles and became a repeatable engine — captured, routed, and followed up automatically.</p>
+      </div>
     </section>
 
     <!-- ===== Campaign Design & Digital Conversion ===== -->
     <section class="ops-section" id="campaign">
-      <span class="section-num">02 — Design</span>
-      <h2>Campaign Design &amp; Digital Conversion</h2>
-      <p class="case-tagline">Designing the funnel that turns a flyer into a signed follow-up.</p>
-      <p style="font-size:0.98rem;color:var(--body);max-width:72ch;margin-top:1.25rem;">
-        I designed EndyMed's campaigns as a connected digital funnel — a flyer drives to a dedicated
-        landing page, which feeds a Mailchimp sequence, which captures the lead and routes it to
-        sales follow-up. Each piece hands off cleanly to the next.
-      </p>
+      <span class="section-num reveal">02 — Design</span>
+      <h2 class="reveal">Campaign Design &amp; Digital Conversion</h2>
+      <p class="case-tagline reveal">One funnel design, tuned for three very different audiences.</p>
 
-      <div class="flow" role="img" aria-label="Conversion funnel: flyer, landing page, Mailchimp, lead capture, sales follow-up.">
-        <div class="flow-node"><span class="fn-t">Flyer</span><span class="fn-s">QR code</span></div>
-        <span class="flow-arrow">→</span>
-        <div class="flow-node accent"><span class="fn-t">Landing Page</span><span class="fn-s">dedicated campaign</span></div>
-        <span class="flow-arrow">→</span>
-        <div class="flow-node"><span class="fn-t">Mailchimp</span><span class="fn-s">segmented email</span></div>
-        <span class="flow-arrow">→</span>
-        <div class="flow-node"><span class="fn-t">Lead Capture</span><span class="fn-s">into the CRM</span></div>
-        <span class="flow-arrow">→</span>
-        <div class="flow-node accent"><span class="fn-t">Sales Follow-Up</span></div>
+      <div class="outcomes stagger">
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Multi-Audience Campaigns</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Dedicated Landing Pages</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Segmented Email</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Funnel Design</span>
       </div>
 
-      <p class="cap-lede" style="margin-top:2rem;"><b style="font-family:var(--sans);color:var(--ink);">The flagship campaign.</b> The Launch Support Program — flyer and live landing page:</p>
-      <div class="ev-pair">
-        <figure>
-          <img class="zoom" src="images/proj/flyer-12k.jpg" alt="Launch Support Program flyer"
-               onerror="this.closest('figure').style.display='none';" loading="lazy" />
-          <figcaption>Launch Support Program flyer (public campaign design).</figcaption>
-        </figure>
-        <figure style="display:flex;flex-direction:column;justify-content:center;">
+      <div class="star-block reveal">
+        <span class="star-tag action">Action</span>
+        <p>Each campaign is a connected digital funnel — a flyer drives to a dedicated landing page, which feeds a Mailchimp sequence, captures the lead into the CRM, and routes it to sales follow-up.</p>
+        <div class="flow stagger" role="img" aria-label="Conversion funnel: flyer, landing page, Mailchimp, lead capture, sales follow-up.">
+          <div class="flow-node"><span class="fn-t">Flyer</span><span class="fn-s">QR code</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node accent"><span class="fn-t">Landing Page</span><span class="fn-s">dedicated campaign</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-t">Mailchimp</span><span class="fn-s">segmented email</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-t">Lead Capture</span><span class="fn-s">into the CRM</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node accent"><span class="fn-t">Sales Follow-Up</span></div>
+        </div>
+      </div>
+
+      <p class="cap-lede reveal" style="margin-top:2.25rem;"><b style="font-family:var(--sans);color:var(--ink);">Three campaigns, three audiences.</b> The funnel stays the same; the message changes for who's on the other end.</p>
+
+      <!-- Campaign 1 -->
+      <div class="ev-pair reveal" style="margin-top:1.5rem;align-items:stretch;">
+        <figure><img class="zoom" src="images/proj/flyer-12k.jpg" alt="Launch Support Program flyer" loading="lazy" /></figure>
+        <div class="compare-col" style="border-color:var(--accent);">
+          <h4 style="color:var(--accent-dk);">Launch Support Program</h4>
+          <p style="font-size:0.95rem;color:var(--body);margin:0 0 0.9rem;"><b style="color:var(--ink);">Audience —</b> prospects evaluating a first capital purchase. Frames the buy around a cash rebate that reduces first-year payment pressure.</p>
           <div class="link-cta" style="margin:0;">
             <a class="btn" href="https://endymedusa.com/12k-rebate" target="_blank" rel="noopener">View the live landing page →</a>
           </div>
-          <figcaption style="margin-top:0.75rem;">endymedusa.com/12k-rebate — the dedicated page the flyer drives to.</figcaption>
-        </figure>
+        </div>
+      </div>
+
+      <!-- Campaign 2 -->
+      <div class="ev-pair reveal" style="margin-top:1.5rem;align-items:stretch;">
+        <figure><img class="zoom" src="images/proj/flyer-glp1.jpg" alt="GLP-1 body contouring campaign flyer" loading="lazy" /></figure>
+        <div class="compare-col">
+          <h4 style="color:var(--accent-dk);">GLP-1 Campaign</h4>
+          <p style="font-size:0.95rem;color:var(--body);margin:0;"><b style="color:var(--ink);">Audience —</b> medspas, weight-loss clinics, and dermatology practices riding the GLP-1 wave. Positions PRO MAX for the skin laxity that follows rapid weight loss — turning GLP-1 patients into long-term skin-tightening clients.</p>
+        </div>
+      </div>
+
+      <!-- Campaign 3 -->
+      <div class="ev-pair reveal" style="margin-top:1.5rem;align-items:stretch;">
+        <figure><img class="zoom" src="images/proj/flyer-scottsdale.jpg" alt="Provider case study flyer (redacted)" loading="lazy" /></figure>
+        <div class="compare-col">
+          <h4 style="color:var(--accent-dk);">Scottsdale Skin Case Study</h4>
+          <p style="font-size:0.95rem;color:var(--body);margin:0;"><b style="color:var(--ink);">Audience —</b> existing EndyMed owners weighing an upgrade to PRO MAX. Uses peer provider proof — reliability, versatility, and recurring revenue — to move current customers up the platform. Provider identity and patient imagery redacted.</p>
+        </div>
+      </div>
+
+      <div class="takeaway reveal">
+        <span class="tk-label">Takeaway</span>
+        <p>One reusable funnel, re-pointed at prospects, trend-riders, and existing owners — each with a message built for them.</p>
       </div>
     </section>
 
     <!-- ===== Med Results ===== -->
     <section class="ops-section" id="med-results">
-      <span class="section-num">03 — Prior Role</span>
-      <h2>Med Results Portfolio</h2>
-      <p class="case-tagline">Order and event operations for an aesthetic device distributor.</p>
-      <p style="font-size:0.98rem;color:var(--body);max-width:72ch;margin-top:1.25rem;">
-        As Office Manager at Med Results, an aesthetic medical device distributor, I ran order and
-        event operations and helped run national training summits end to end — from agenda and
-        attendee communication through day-of execution. This portfolio is embedded live from Canva.
-      </p>
+      <span class="section-num reveal">03 — Prior Role</span>
+      <h2 class="reveal">Med Results Portfolio</h2>
+      <p class="case-tagline reveal">Order and event operations for an aesthetic device distributor.</p>
+      <div class="star-block reveal">
+        <span class="star-tag action">Role</span>
+        <p>As Office Manager at Med Results, an aesthetic medical device distributor, I ran order and event operations and helped run national training summits end to end — from agenda and attendee communication through day-of execution. This portfolio is embedded live from Canva.</p>
+      </div>
 
-      <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+      <div class="reveal" style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
         <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAGclQWn5dM/psQ4n59QT8Di7g5BKMPH2g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
       </div>
       <p class="embed-caption"><a href="https://www.canva.com/design/DAGclQWn5dM/psQ4n59QT8Di7g5BKMPH2g/view?utm_content=DAGclQWn5dM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Open the Med Results portfolio →</a></p>

@@ -6,6 +6,7 @@
   <title>Projects — Brandon Acosta</title>
   <meta name="description" content="Sales operations at EndyMed — five case studies across CRM infrastructure, client onboarding, RFM re-engagement, purchase-agreement automation, and operational excellence." />
   <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -53,44 +54,47 @@
     <!-- PROJECT 1 — CRM INFRASTRUCTURE                               -->
     <!-- ============================================================ -->
     <section class="ops-section" id="crm">
-      <span class="section-num">Project 01</span>
-      <h2>CRM Infrastructure</h2>
-      <p class="case-tagline">A CRM built from scratch to give a national team one operating rhythm.</p>
+      <span class="section-num reveal">Project 01</span>
+      <h2 class="reveal">CRM Infrastructure</h2>
+      <p class="case-tagline reveal">A CRM built from scratch to give a national team one operating rhythm.</p>
 
-      <div class="star-block">
+      <div class="outcomes stagger">
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Standardized CRM</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Automated Territory Routing</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Weekly KPI Reporting</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Live Executive Dashboard</span>
+      </div>
+
+      <div class="star-block reveal">
         <span class="star-tag problem">Problem</span>
         <p>No standardized CRM. No consistent lead lifecycle. Limited pipeline visibility for leadership.</p>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag action">Action</span>
-        <p>I built a Monday.com CRM from the ground up — one lead lifecycle, and an identical set of boards for every rep. The system, walked through end to end:</p>
+        <p>I built a Monday.com CRM from the ground up — one lead lifecycle, and an identical set of boards for every rep. Expand any step to see the evidence:</p>
 
         <div class="ev-steps">
-          <figure class="ev-step">
-            <div class="ev-head"><span class="ev-n">1</span><span class="ev-t">Lead Intake Form</span></div>
-            <div class="ev-body">
-              <img class="zoom" src="images/proj/crm-01.jpg" alt="Standardized lead intake form" loading="lazy" />
-              <p class="ev-cap">Every lead enters through a required-field intake form, so data is clean at the point of capture.</p>
-            </div>
-          </figure>
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">1</span><span class="ev-t">Lead Intake Form</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">Every lead enters through a required-field intake form, so data is clean at the point of capture.</div>
+            <div class="ev-panel"><div class="ev-panel-inner"><img class="zoom" src="images/proj/crm-01.jpg" alt="Standardized lead intake form" loading="lazy" /></div></div>
+          </div>
           <div class="ev-arrow">↓</div>
 
-          <figure class="ev-step">
-            <div class="ev-head"><span class="ev-n">2</span><span class="ev-t">Automated Lead Routing</span></div>
-            <div class="ev-body">
-              <img class="zoom" src="images/proj/crm-02.jpg" alt="Automated territory routing flow" loading="lazy" />
-              <p class="ev-cap">The Company Leads Inbox holds the master record; automation formats the lead and creates a duplicate on the assigned territory rep's board — no manual triage.</p>
-            </div>
-          </figure>
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">2</span><span class="ev-t">Automated Lead Routing</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">The Company Leads Inbox holds the master record; automation creates a duplicate on the assigned territory rep's board — no manual triage.</div>
+            <div class="ev-panel"><div class="ev-panel-inner"><img class="zoom" src="images/proj/crm-02.jpg" alt="Automated territory routing flow" loading="lazy" /></div></div>
+          </div>
           <div class="ev-arrow">↓</div>
 
-          <figure class="ev-step">
-            <div class="ev-head"><span class="ev-n">3</span><span class="ev-t">Rep Leads Board</span></div>
-            <div class="ev-body">
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">3</span><span class="ev-t">Rep Leads Board</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">Every rep works an identical board with the same six standardized lead statuses.</div>
+            <div class="ev-panel"><div class="ev-panel-inner">
               <img class="zoom" src="images/proj/crm-03.jpg" alt="Rep leads board with standardized statuses" loading="lazy" />
-              <p class="ev-cap">Every rep works an identical board with the same six standardized lead statuses:</p>
-              <table class="data-table" style="margin-top:1rem;">
+              <table class="data-table" style="margin-top:1.1rem;">
                 <tbody>
                   <tr><td class="st">New Lead</td><td>Captured, not yet worked</td></tr>
                   <tr><td class="st">Contacted</td><td>Initial outreach made</td></tr>
@@ -100,16 +104,16 @@
                   <tr><td class="st">Unqualified</td><td>Not a fit; archived</td></tr>
                 </tbody>
               </table>
-            </div>
-          </figure>
+            </div></div>
+          </div>
           <div class="ev-arrow">↓</div>
 
-          <figure class="ev-step">
-            <div class="ev-head"><span class="ev-n">4</span><span class="ev-t">Deals Board</span></div>
-            <div class="ev-body">
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">4</span><span class="ev-t">Deals Board</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">Qualified leads automatically become deals and move through standardized, weighted stages.</div>
+            <div class="ev-panel"><div class="ev-panel-inner">
               <img class="zoom" src="images/proj/crm-04.jpg" alt="Deals kanban with standardized stages" loading="lazy" />
-              <p class="ev-cap">Qualified leads automatically become deals and move through standardized, weighted stages:</p>
-              <table class="data-table" style="margin-top:1rem;">
+              <table class="data-table" style="margin-top:1.1rem;">
                 <tbody>
                   <tr><td class="pct">25%</td><td>Feeder / Lead Developed</td></tr>
                   <tr><td class="pct">50%</td><td>Scheduled Demo or Presentation</td></tr>
@@ -119,24 +123,22 @@
                   <tr><td class="pct">100%</td><td>Deal Closed and Shipped</td></tr>
                 </tbody>
               </table>
-            </div>
-          </figure>
+            </div></div>
+          </div>
           <div class="ev-arrow">↓</div>
 
-          <figure class="ev-step">
-            <div class="ev-head"><span class="ev-n">5</span><span class="ev-t">Weekly Sales Report</span></div>
-            <div class="ev-body">
-              <img class="zoom" src="images/proj/crm-05.jpg" alt="Automated weekly activity report" loading="lazy" />
-              <p class="ev-cap">Every week, an automated report emails each territory rep with their current pipeline already populated from the CRM.</p>
-            </div>
-          </figure>
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">5</span><span class="ev-t">Weekly Sales Report</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">Every week, an automated report emails each rep with their current pipeline already populated from the CRM.</div>
+            <div class="ev-panel"><div class="ev-panel-inner"><img class="zoom" src="images/proj/crm-05.jpg" alt="Automated weekly activity report" loading="lazy" /></div></div>
+          </div>
         </div>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag result">Result</span>
         <p>Leadership gained a live managerial dashboard — one standardized commercial operating rhythm across the whole team.</p>
-        <div class="widget-cards">
+        <div class="widget-cards stagger">
           <figure class="widget-card" style="margin:0;">
             <span class="wc-t">Forecasted Revenue</span>
             <img class="zoom" src="images/proj/crm-06a.jpg" alt="Forecasted revenue widget" loading="lazy" style="width:100%;margin-top:0.6rem;border:1px solid var(--line);border-radius:4px;" />
@@ -152,22 +154,34 @@
         </div>
         <p class="lb-hint">All customer data, names, and dollar values are redacted. Click any screenshot to enlarge.</p>
       </div>
+
+      <div class="takeaway reveal">
+        <span class="tk-label">Takeaway</span>
+        <p>One system turned a scattered, invisible pipeline into a standardized operating rhythm that leadership could see in real time.</p>
+      </div>
     </section>
 
     <!-- ============================================================ -->
     <!-- PROJECT 2 — CLIENT ONBOARDING SYSTEM                         -->
     <!-- ============================================================ -->
     <section class="ops-section" id="onboarding">
-      <span class="section-num">Project 02</span>
-      <h2>Client Onboarding System</h2>
-      <p class="case-tagline">One repeatable journey from signed deal to a certified, supported customer.</p>
+      <span class="section-num reveal">Project 02</span>
+      <h2 class="reveal">Client Onboarding System</h2>
+      <p class="case-tagline reveal">One repeatable journey from signed deal to a certified, supported customer.</p>
 
-      <div class="star-block">
+      <div class="outcomes stagger">
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Automated Training Scheduling</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Digital Installation Verification</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Standardized Communications</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Cross-Functional Visibility</span>
+      </div>
+
+      <div class="star-block reveal">
         <span class="star-tag problem">Problem</span>
         <p>The customer journey became fragmented after the deal was signed — fulfillment, financing, installation, training, and marketing handoffs were disconnected.</p>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag action">Action</span>
         <p>I built a client onboarding board, triggered at closed-won, that moves every customer through one standardized path:</p>
         <ol class="steps">
@@ -180,21 +194,21 @@
           <li class="step"><h4>30-Day Check-In</h4></li>
         </ol>
 
-        <figure class="ev-step" style="margin-top:1.75rem;">
-          <div class="ev-head"><span class="ev-n"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><rect x="3" y="4" width="5" height="16"/><rect x="10" y="4" width="5" height="16"/><rect x="17" y="4" width="4" height="16"/></svg></span><span class="ev-t">Client Onboarding board</span></div>
-          <div class="ev-body">
-            <img class="zoom" src="images/proj/onboarding-01.jpg" alt="Client onboarding kanban board (redacted)" loading="lazy" />
-            <p class="ev-cap">Each deal moves across the stages with device, funding, shipping, installation, and training dates tracked in one shared view. Customer names redacted.</p>
+        <div class="ev-steps" style="margin-top:1.75rem;">
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">■</span><span class="ev-t">The onboarding board</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">Each deal moves across the stages with device, funding, shipping, installation, and training dates in one shared view.</div>
+            <div class="ev-panel"><div class="ev-panel-inner"><img class="zoom" src="images/proj/onboarding-01.jpg" alt="Client onboarding kanban board (redacted)" loading="lazy" /></div></div>
           </div>
-        </figure>
+        </div>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag action">Action</span>
         <h3 style="margin:0.2rem 0 0;">Standardized customer communications</h3>
-        <p>Every touchpoint uses a standardized template and resource set, delivered automatically during onboarding — so the experience is consistent regardless of who sends it.</p>
+        <p>Every touchpoint uses a standardized template and resource set, delivered automatically during onboarding.</p>
 
-        <div class="email-card">
+        <div class="email-card reveal">
           <div class="email-head">
             <span class="subj">Schedule your PRO MAX clinical training</span>
             From: Operations, EndyMed &nbsp;·&nbsp; To: [Client]
@@ -206,31 +220,39 @@
           </div>
         </div>
 
-        <div class="callout" style="margin-top:1.5rem;">
+        <div class="callout reveal" style="margin-top:1.5rem;">
           <b>The email sends itself.</b> The training-scheduling email fires automatically when a project's <b>Onboarding Stage = Schedule Training</b> and the <b>Funded</b> checkbox is checked — no manual reminder needed.
         </div>
 
-        <p class="cap-lede" style="margin-top:2rem;"><b style="font-family:var(--sans);color:var(--ink);">A standardized training resource system.</b> Every customer receives the same prepared materials:</p>
-        <div class="doc-cards">
+        <p class="cap-lede reveal" style="margin-top:2rem;"><b style="font-family:var(--sans);color:var(--ink);">A standardized training resource system.</b> Every customer receives the same prepared materials:</p>
+        <div class="doc-cards stagger">
           <div class="doc-card"><svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/><path d="M9 12h6M9 16h5"/></svg><span class="doc-t">Preparing for Clinical Training</span></div>
           <div class="doc-card"><svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/><path d="M9 12h6M9 16h5"/></svg><span class="doc-t">Clinical Training Schedule</span></div>
           <div class="doc-card"><svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/><path d="M9 12h6M9 16h5"/></svg><span class="doc-t">Protocols &amp; Quick-Reference Guides</span></div>
           <div class="doc-card"><svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/><path d="M9 12h6M9 16h5"/></svg><span class="doc-t">Certificates</span></div>
           <div class="doc-card"><svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/><path d="M9 12h6M9 16h5"/></svg><span class="doc-t">Support Contacts</span></div>
         </div>
-        <figure style="margin:1.25rem 0 0;">
-          <img class="zoom" src="images/proj/onboarding-05.jpg" alt="Clinical training resource folder" loading="lazy" style="width:100%;border:1px solid var(--line);border-radius:6px;display:block;" />
-          <figcaption class="ev-cap">The shared resource folder that these materials live in and deliver from.</figcaption>
-        </figure>
+        <div class="ev-steps" style="margin-top:1.25rem;">
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">■</span><span class="ev-t">Shared resource folder</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">The folder these materials live in and deliver from during onboarding.</div>
+            <div class="ev-panel"><div class="ev-panel-inner"><img class="zoom" src="images/proj/onboarding-05.jpg" alt="Clinical training resource folder" loading="lazy" /></div></div>
+          </div>
+        </div>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag result">Result</span>
-        <div class="outcome-cards">
+        <div class="outcome-cards stagger">
           <div class="outcome"><h4>Cleaner handoffs</h4><p>Fulfillment, clinical, and marketing work from one shared board.</p></div>
           <div class="outcome"><h4>Faster scheduling</h4><p>Standard templates and triggers remove the back-and-forth.</p></div>
           <div class="outcome"><h4>Consistent experience</h4><p>Every customer starts the same, well-supported way.</p></div>
         </div>
+      </div>
+
+      <div class="takeaway reveal">
+        <span class="tk-label">Takeaway</span>
+        <p>Every customer now moves through the same guided, automated journey — from signed deal to certified and supported.</p>
       </div>
     </section>
 
@@ -238,19 +260,26 @@
     <!-- PROJECT 3 — RFM SEGMENTATION & RE-ENGAGEMENT                 -->
     <!-- ============================================================ -->
     <section class="ops-section" id="rfm">
-      <span class="section-num">Project 03</span>
-      <h2>RFM Segmentation &amp; Re-Engagement Strategy</h2>
-      <p class="case-tagline">A consulting-style analysis that turned a scattered install base into a ranked target list.</p>
+      <span class="section-num reveal">Project 03</span>
+      <h2 class="reveal">RFM Segmentation &amp; Re-Engagement Strategy</h2>
+      <p class="case-tagline reveal">A consulting-style analysis that turned a scattered install base into a ranked target list.</p>
 
-      <div class="star-block">
+      <div class="outcomes stagger">
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Unified Install Base</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Customer Segmentation</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Re-Engagement Strategy</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Executive Presentation</span>
+      </div>
+
+      <div class="star-block reveal">
         <span class="star-tag problem">Problem</span>
         <p>Revenue needed to grow from the existing install base — but the data to target it was scattered across systems.</p>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag action">Action</span>
         <p>I consolidated the install base and scored it, then translated the analysis into a prioritized re-engagement strategy.</p>
-        <div class="flow" role="img" aria-label="ERP, Shopify and account records are cleaned and joined into a unified install base, scored with RFM, segmented, and turned into the 2026 re-engagement strategy.">
+        <div class="flow stagger" role="img" aria-label="ERP, Shopify and account records are cleaned and joined into a unified install base, scored with RFM, segmented, and turned into the 2026 re-engagement strategy.">
           <div class="flow-node"><span class="fn-t">Source Systems</span><span class="fn-s">ERP · Shopify · Accounts</span></div>
           <span class="flow-arrow">→</span>
           <div class="flow-node"><span class="fn-t">Clean &amp; Join</span><span class="fn-s">normalize · dedupe</span></div>
@@ -265,7 +294,7 @@
         </div>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag result">Result</span>
         <p>The analysis became EndyMed's 2026 re-engagement strategy, presented to leadership. Redacted deck:</p>
         <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
@@ -273,43 +302,51 @@
         </div>
         <p class="embed-caption"><a href="https://www.canva.com/design/DAHO16awU68/Dd61endO3ITr5GnyIxnfAA/view?utm_content=DAHO16awU68&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Open the redacted 2026 re-engagement strategy deck →</a></p>
       </div>
+
+      <div class="takeaway reveal">
+        <span class="tk-label">Takeaway</span>
+        <p>A scattered install base became a ranked, board-ready re-engagement strategy leadership could act on.</p>
+      </div>
     </section>
 
     <!-- ============================================================ -->
     <!-- PROJECT 4 — PURCHASE AGREEMENT AUTOMATION                    -->
     <!-- ============================================================ -->
     <section class="ops-section" id="pq">
-      <span class="section-num">Project 04</span>
-      <h2>Purchase Agreement Automation</h2>
-      <p class="case-tagline">From a 30–60 minute manual quote to seconds, with cleaner data.</p>
+      <span class="section-num reveal">Project 04</span>
+      <h2 class="reveal">Purchase Agreement Automation</h2>
+      <p class="case-tagline reveal">From a 30–60 minute manual quote to seconds, with cleaner data.</p>
 
-      <div class="star-block">
+      <div class="outcomes stagger">
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Required-Field Intake</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Automated Agreement Creation</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Approval Workflow</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Error Reduction</span>
+      </div>
+
+      <div class="star-block reveal">
         <span class="star-tag problem">Problem</span>
         <p>Manual PQ creation. Incomplete submissions. Manual pricing on every agreement.</p>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag action">Action</span>
         <div class="ev-steps">
-          <figure class="ev-step">
-            <div class="ev-head"><span class="ev-n">1</span><span class="ev-t">Required-field PQ request form</span></div>
-            <div class="ev-body">
-              <img class="zoom" src="images/proj/pq-01.jpg" alt="PQ request form with required fields" loading="lazy" />
-              <p class="ev-cap">Reps complete a standardized, required-field request in roughly 5–10 minutes — no PQ can be created until it's complete.</p>
-            </div>
-          </figure>
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">1</span><span class="ev-t">Required-field PQ request form</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">Reps complete a standardized, required-field request in roughly 5–10 minutes — no PQ can be created until it's complete.</div>
+            <div class="ev-panel"><div class="ev-panel-inner"><img class="zoom" src="images/proj/pq-01.jpg" alt="PQ request form with required fields" loading="lazy" /></div></div>
+          </div>
           <div class="ev-arrow">↓</div>
-          <figure class="ev-step">
-            <div class="ev-head"><span class="ev-n">2</span><span class="ev-t">Power Automate flow</span></div>
-            <div class="ev-body">
-              <img class="zoom" src="images/proj/pq-02.jpg" alt="Power Automate flow" loading="lazy" />
-              <p class="ev-cap">On submission, a Power Automate flow copies the template, runs the pricing script, and prepares the agreement.</p>
-            </div>
-          </figure>
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">2</span><span class="ev-t">Power Automate flow</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">On submission, a Power Automate flow copies the template, runs the pricing script, and prepares the agreement.</div>
+            <div class="ev-panel"><div class="ev-panel-inner"><img class="zoom" src="images/proj/pq-02.jpg" alt="Power Automate flow" loading="lazy" /></div></div>
+          </div>
         </div>
 
-        <p class="cap-lede" style="margin-top:1.75rem;"><b style="font-family:var(--sans);color:var(--ink);">The workflow, end to end.</b></p>
-        <div class="flow" role="img" aria-label="PQ request form, Power Automate, Office Scripts, discount distribution, template updates, approval email, spreadsheet copy, client signature.">
+        <p class="cap-lede reveal" style="margin-top:1.75rem;"><b style="font-family:var(--sans);color:var(--ink);">The workflow, end to end.</b></p>
+        <div class="flow stagger" role="img" aria-label="PQ request form, Power Automate, Office Scripts, discount distribution, template updates, approval email, spreadsheet copy, client signature.">
           <div class="flow-node"><span class="fn-t">PQ Request Form</span></div>
           <span class="flow-arrow">→</span>
           <div class="flow-node"><span class="fn-t">Power Automate</span></div>
@@ -326,21 +363,26 @@
         </div>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag result">Result</span>
         <p>The automation generates a completed approval email with pricing, terms, warranty, and agreement language already populated — and attaches a spreadsheet copy of the Purchase Agreement for review.</p>
-        <figure class="ev-step" style="margin-top:1.25rem;">
-          <div class="ev-head"><span class="ev-n">✓</span><span class="ev-t">Generated approval email</span></div>
-          <div class="ev-body">
-            <img class="zoom" src="images/proj/pq-03.jpg" alt="Auto-generated PQ approval email (redacted)" loading="lazy" />
-            <p class="ev-cap">The approval email, produced automatically from the request form. Customer, rep, and dollar values redacted.</p>
+        <div class="ev-steps" style="margin-top:1.1rem;">
+          <div class="ev-step reveal" data-accordion>
+            <button class="ev-head" type="button"><span class="ev-n">✓</span><span class="ev-t">Generated approval email</span><span class="ev-toggle"><span class="lbl-closed">See example</span><span class="lbl-open">Hide</span><span class="chev">▾</span></span></button>
+            <div class="ev-sub">The approval email, produced automatically from the request form. Customer, rep, and dollar values redacted.</div>
+            <div class="ev-panel"><div class="ev-panel-inner"><img class="zoom" src="images/proj/pq-03.jpg" alt="Auto-generated PQ approval email (redacted)" loading="lazy" /></div></div>
           </div>
-        </figure>
-        <div class="stat-row" style="margin-top:1.5rem;">
+        </div>
+        <div class="stat-row stagger" style="margin-top:1.5rem;">
           <div class="stat"><div class="n">30–60 min</div><div class="l">Before — per PQ, by hand</div></div>
           <div class="stat"><div class="n">Seconds</div><div class="l">After — once the form is submitted</div></div>
           <div class="stat"><div class="n">Fewer errors</div><div class="l">Impact — cleaner approvals, faster execution</div></div>
         </div>
+      </div>
+
+      <div class="takeaway reveal">
+        <span class="tk-label">Takeaway</span>
+        <p>A 30–60 minute manual quote became a validated, error-resistant workflow that runs in seconds.</p>
       </div>
     </section>
 
@@ -348,26 +390,33 @@
     <!-- PROJECT 5 — OPERATIONAL EXCELLENCE                           -->
     <!-- ============================================================ -->
     <section class="ops-section" id="ops">
-      <span class="section-num">Project 05</span>
-      <h2>Operational Excellence</h2>
-      <p class="case-tagline">Turning tribal knowledge into scalable, documented systems.</p>
+      <span class="section-num reveal">Project 05</span>
+      <h2 class="reveal">Operational Excellence</h2>
+      <p class="case-tagline reveal">Turning tribal knowledge into scalable, documented systems.</p>
 
-      <div class="star-block">
+      <div class="outcomes stagger">
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Internal Knowledge Library</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Sales Enablement</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Training Resources</span>
+        <span class="outcome-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Standardized Service Workflows</span>
+      </div>
+
+      <div class="star-block reveal">
         <span class="star-tag problem">Problem</span>
         <p>Too many processes relied on tribal knowledge — inconsistent, hard to scale, and dependent on who happened to be handling them.</p>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag action">Action</span>
         <p>I organized operating documentation and enablement into four scalable systems:</p>
-        <div class="outcome-cards">
+        <div class="outcome-cards stagger">
           <div class="outcome"><h4>Internal Operations</h4><p>SOPs, agreements, and protocols in one governed library.</p></div>
           <div class="outcome"><h4>Sales Enablement</h4><p>Presentations, studies, and field resources reps can rely on.</p></div>
           <div class="outcome"><h4>Clinical Training</h4><p>Prep materials, schedules, and certificates, standardized.</p></div>
           <div class="outcome"><h4>Service &amp; Support</h4><p>Documented, repeatable procedures for post-sale issues.</p></div>
         </div>
 
-        <div class="ev-pair">
+        <div class="ev-pair stagger" style="margin-top:1.5rem;">
           <figure>
             <img class="zoom" src="images/proj/sop-01.jpg" alt="Internal operations documentation library" loading="lazy" />
             <figcaption>Internal operations — a governed documentation library.</figcaption>
@@ -378,8 +427,8 @@
           </figure>
         </div>
 
-        <p class="cap-lede" style="margin-top:2rem;"><b style="font-family:var(--sans);color:var(--ink);">Deep dive — Replacement Tip Request.</b> I replaced inconsistent, case-by-case replacement decisions with one repeatable, documented SOP.</p>
-        <div class="compare">
+        <p class="cap-lede reveal" style="margin-top:2rem;"><b style="font-family:var(--sans);color:var(--ink);">Deep dive — Replacement Tip Request.</b> I replaced inconsistent, case-by-case replacement decisions with one repeatable, documented SOP.</p>
+        <div class="compare stagger">
           <div class="compare-col old">
             <h4>Old workflow</h4>
             <ol>
@@ -401,14 +450,19 @@
         </div>
       </div>
 
-      <div class="star-block">
+      <div class="star-block reveal">
         <span class="star-tag result">Result</span>
-        <div class="outcome-cards">
+        <div class="outcome-cards stagger">
           <div class="outcome"><h4>Consistent execution</h4><p>The same process runs the same way, every time.</p></div>
           <div class="outcome"><h4>Better documentation</h4><p>Decisions are written down and auditable.</p></div>
           <div class="outcome"><h4>Lower operational risk</h4><p>Less dependence on any single person's knowledge.</p></div>
           <div class="outcome"><h4>Clear ownership</h4><p>Every workflow has a defined owner and trigger.</p></div>
         </div>
+      </div>
+
+      <div class="takeaway reveal">
+        <span class="tk-label">Takeaway</span>
+        <p>Operations that once depended on individuals now run as documented, auditable systems that scale.</p>
       </div>
     </section>
 

@@ -815,6 +815,92 @@ img.zoom { cursor: zoom-in; transition: none; }
 .ev-pair figcaption { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
 @media (max-width: 720px) { .ev-pair { grid-template-columns: 1fr; } }
 
+/* ==========================================================================
+   Design system — motion, disclosure, hierarchy (final polish)
+   ========================================================================== */
+
+/* Scroll reveal (gated on .js so content is visible without JavaScript) */
+.js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s cubic-bezier(.22,.61,.36,1), transform .6s cubic-bezier(.22,.61,.36,1); }
+.js .reveal.in { opacity: 1; transform: none; }
+.js .stagger > * { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
+.js .stagger.in > * { opacity: 1; transform: none; }
+.stagger.in > *:nth-child(1) { transition-delay: .02s; }
+.stagger.in > *:nth-child(2) { transition-delay: .09s; }
+.stagger.in > *:nth-child(3) { transition-delay: .16s; }
+.stagger.in > *:nth-child(4) { transition-delay: .23s; }
+.stagger.in > *:nth-child(5) { transition-delay: .30s; }
+.stagger.in > *:nth-child(6) { transition-delay: .37s; }
+.stagger.in > *:nth-child(7) { transition-delay: .44s; }
+
+/* Hover elevation (subtle) */
+.outcome, .sop-card, .doc-card, .widget-card, .flow-node, .compare-col, .ev-pair figure, .card {
+  transition: transform .22s cubic-bezier(.22,.61,.36,1), box-shadow .22s ease, border-color .22s ease;
+}
+.outcome:hover, .sop-card:hover, .doc-card:hover, .widget-card:hover, .compare-col:hover, .ev-pair figure:hover {
+  transform: translateY(-3px); box-shadow: 0 10px 30px rgba(21,35,59,.09); border-color: var(--line-strong);
+}
+.flow-node:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(21,35,59,.08); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 12px 34px rgba(21,35,59,.08); }
+
+/* Key Outcomes badge strip */
+.outcomes { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.4rem; }
+.outcome-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--sans); font-size: 0.82rem; font-weight: 500; color: var(--ink-soft);
+  background: var(--bg-alt); border: 1px solid var(--line); border-radius: 999px; padding: 0.42rem 0.9rem;
+  transition: border-color .2s ease, background .2s ease;
+}
+.outcome-badge:hover { border-color: var(--accent); background: #fff; }
+.outcome-badge svg { width: 14px; height: 14px; color: var(--accent); flex: 0 0 auto; }
+
+/* Expandable evidence (accordion) */
+.ev-step { transition: box-shadow .22s ease, border-color .22s ease; }
+.ev-step:hover { border-color: var(--line-strong); }
+button.ev-head { width: 100%; border: 0; background: var(--bg-alt); cursor: pointer; font: inherit; }
+button.ev-head:hover { background: #f0f1ee; }
+.ev-toggle { margin-left: auto; display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--sans); font-size: 0.8rem; font-weight: 600; color: var(--accent-dk); white-space: nowrap; }
+.ev-toggle .chev { transition: transform .3s ease; font-size: 0.9rem; }
+.ev-step.open .ev-toggle .chev { transform: rotate(180deg); }
+.ev-step.open .ev-toggle .lbl-open { display: none; }
+.ev-toggle .lbl-closed { display: inline; }
+.ev-step.open .ev-toggle .lbl-closed { display: none; }
+.ev-toggle .lbl-open { display: none; }
+.ev-step.open .ev-toggle .lbl-open { display: inline; }
+.ev-sub { padding: 0.95rem 1.2rem 0; font-size: 0.95rem; color: var(--body); max-width: 74ch; }
+.ev-panel { max-height: 0; overflow: hidden; transition: max-height .42s cubic-bezier(.22,.61,.36,1); }
+.ev-panel-inner { padding: 1rem 1.2rem 1.2rem; }
+.ev-panel-inner img { width: 100%; border: 1px solid var(--line); border-radius: 6px; display: block; }
+
+/* Key Takeaway */
+.takeaway { border-top: 1px solid var(--line); margin-top: 2.75rem; padding-top: 1.6rem; display: flex; gap: 1rem; align-items: flex-start; }
+.takeaway .tk-label { font-family: var(--sans); font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; flex: 0 0 auto; padding-top: 0.35rem; }
+.takeaway p { font-family: var(--serif); font-size: 1.12rem; font-style: italic; color: var(--ink-soft); margin: 0; max-width: 66ch; line-height: 1.45; }
+
+/* Section rhythm — more breathing room for premium feel */
+.ops-section { scroll-margin-top: 130px; padding: clamp(3.25rem, 7vw, 5rem) 0; }
+.ops-section + .ops-section { border-top: 1px solid var(--line); }
+
+/* Centered anchor sub-nav */
+.subnav-inner { justify-content: center; }
+
+/* Larger project titles for hierarchy */
+#crm h2, #onboarding h2, #rfm h2, #pq h2, #ops h2, #install-base h2,
+#events h2, #campaign h2, #med-results h2, #oscm h2, #northern-aero h2, #job-search h2 {
+  font-size: clamp(1.7rem, 3.6vw, 2.35rem); margin-bottom: 0.15rem;
+}
+
+/* Smooth image modal transition */
+.lightbox { display: flex !important; visibility: hidden; pointer-events: none; opacity: 0; transition: opacity .25s ease, visibility .25s; }
+.lightbox.open { visibility: visible; pointer-events: auto; opacity: 1; }
+.lightbox img { transform: scale(.97); transition: transform .28s cubic-bezier(.22,.61,.36,1); }
+.lightbox.open img { transform: scale(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .stagger > * { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .lightbox, .lightbox img { transition: none; }
+}
+@media (max-width: 640px) { .takeaway { flex-direction: column; gap: 0.4rem; } }
+
 /* Print */
 @media print {
   .site-nav, .subnav, .nav-toggle, .site-footer { display: none; }
