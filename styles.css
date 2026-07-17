@@ -926,6 +926,30 @@ button.ev-head:hover { background: #f0f1ee; }
 .impact-chip .ic-to { font-family: var(--sans); font-size: 0.92rem; font-weight: 600; color: var(--ink); margin-top: 0.25rem; }
 .impact-chip .ic-to::before { content: "\2192\00a0"; color: var(--accent); }
 
+/* Before -> After transformation flow (deep dive) */
+.transform { margin-top: 1.5rem; display: grid; gap: 0.7rem; }
+.tf-head { display: grid; grid-template-columns: 1fr 46px 1fr; align-items: center; }
+.tf-head span { font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.13em; text-transform: uppercase; font-weight: 600; }
+.tf-h-old { color: var(--muted); }
+.tf-h-new { color: var(--accent-dk); }
+.tf-row { display: grid; grid-template-columns: 1fr 46px 1fr; align-items: stretch; }
+.tf-cell { border: 1px solid var(--line); border-radius: 9px; padding: 0.9rem 1.05rem; font-size: 0.92rem; color: var(--body); line-height: 1.4; }
+.tf-cell.old { background: var(--bg-alt); }
+.tf-cell.new { border-color: var(--accent); background: #fff; box-shadow: 0 1px 3px rgba(154,123,79,.08); }
+.tf-cell .tf-k { display: block; font-family: var(--sans); font-size: 0.64rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; margin-bottom: 0.35rem; }
+.tf-cell.old .tf-k { color: var(--muted); }
+.tf-cell.new .tf-k { color: var(--accent); }
+.tf-arrow { display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 1.15rem; }
+.js .tf-cell { transition: transform .3s ease, box-shadow .3s ease; }
+.js .tf-cell.new:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(154,123,79,.16); }
+@media (max-width: 640px) {
+  .tf-head { display: none; }
+  .tf-row { grid-template-columns: 1fr; }
+  .tf-arrow { transform: rotate(90deg); padding: 0.35rem 0; }
+  .tf-cell.old .tf-k::after { content: " \00b7 before"; color: var(--muted); }
+  .tf-cell.new .tf-k::after { content: " \00b7 after"; color: var(--accent); }
+}
+
 /* Larger project titles for hierarchy */
 #crm h2, #onboarding h2, #rfm h2, #pq h2, #ops h2, #install-base h2,
 #events h2, #campaign h2, #med-results h2, #oscm h2, #northern-aero h2, #job-search h2 {
